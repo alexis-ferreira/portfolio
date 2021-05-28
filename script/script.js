@@ -149,3 +149,63 @@ btnContact.addEventListener('mouseleave', function(){
     paragraphContact.style.color = 'black';
     paragraphContact.style.transition = 'background-color 300ms, color 300ms';
 })
+
+
+
+// RESPONSIVE
+
+if (screen.width <= 450){
+
+    let menuOpen = false;
+    console.log(menuOpen);
+
+    btnMenu.addEventListener('click', function(){
+
+        if (menuOpen == false){
+                menuOpen = true;
+
+                btnPortfolio.style.top = '0';
+                borderPortfolio.style.opacity = '100%';
+                borderPortfolio.style.transition = 'opacity 1500ms';
+            
+                btnCv.style.left = '20px';
+                btnCv.style.transform = 'rotate(-360deg)'
+                borderCv.style.opacity = '100%';
+                borderCv.style.transition = 'opacity 1500ms';
+                borderCv.style.transitionDelay = "300ms";
+            
+                btnContact.style.right = '20px';
+                btnContact.style.transform = 'rotate(360deg)';
+                borderContact.style.opacity = '100%';
+                borderContact.style.transition = 'opacity 1500ms'
+                borderContact.style.transitionDelay = "300ms"
+            
+                iconMenu[0].style.fontSize = '50px';
+                iconMenu[0].style.border = '1px solid black';
+                iconMenu[0].style.transition = 'font-size 500ms, border 1000ms, transform 500ms';
+                iconMenu[0].style.transitionDelay = '300ms';
+
+            }else {
+                menuOpen = false
+
+                btnPortfolio.style.top = '154px';
+                borderPortfolio.style.opacity = '0%';
+                borderPortfolio.style.transition = 'opacity 300ms'
+
+                btnCv.style.left = '154px';
+                btnCv.style.transform = 'rotate(360deg)';
+                borderCv.style.opacity = '0%';
+                borderCv.style.transition = 'opacity 500ms'
+
+                btnContact.style.right = '154px';
+                btnContact.style.transform = 'rotate(-360deg)';
+                borderContact.style.opacity = '0%';
+                borderContact.style.transition = 'opacity 500ms'
+
+                iconMenu[0].style.fontSize = '80px';
+                iconMenu[0].style.border = '1px solid white';
+                iconMenu[0].style.transition = 'font-size 500ms, border 1000ms';
+                iconMenu[0].style.transitionDelay = '300ms';
+            }
+        })
+}

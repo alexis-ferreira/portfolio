@@ -32,6 +32,16 @@ let borderCv = document.getElementById('borderCv');
 let borderContact = document.getElementById('borderContact');
 // console.log(borderContact);
 
+let paragraphPortfolio = document.getElementById('p-portfolio');
+
+let paragraphCv = document.getElementById('p-cv');
+
+let paragraphContact = document.getElementById('p-contact');
+
+
+
+
+
 // SCRIPT
 
 btnMenu.addEventListener('mouseenter', function(){
@@ -82,26 +92,50 @@ divMenu.addEventListener('mouseleave', function(){
 btnPortfolio.addEventListener('mouseenter', function(){
     iconMenu[0].style.transform = 'rotate(-45deg)';
     iconMenu[0].style.transition = 'transform 500ms';
+
+    paragraphPortfolio.style.backgroundColor = 'black';
+    paragraphPortfolio.style.color = 'white';
+    paragraphPortfolio.style.transition = 'background-color 300ms, color 300ms';
 })
 
 btnPortfolio.addEventListener('mouseleave', function(){
     iconMenu[0].style.transform = 'rotate(0deg)'
+
+    paragraphPortfolio.style.backgroundColor = 'white';
+    paragraphPortfolio.style.color = 'black';
+    paragraphPortfolio.style.transition = 'background-color 300ms, color 300ms';
 })
 
 btnCv.addEventListener('mouseenter', function(){
     iconMenu[0].style.transform = 'rotate(-135deg)';
     iconMenu[0].style.transition = 'transform 500ms';
+
+    paragraphCv.style.backgroundColor = 'black';
+    paragraphCv.style.color = 'white';
+    paragraphCv.style.transition = 'background-color 300ms, color 300ms';
 })
 
 btnCv.addEventListener('mouseleave', function(){
     iconMenu[0].style.transform = 'rotate(0deg)'
+
+    paragraphCv.style.backgroundColor = 'white';
+    paragraphCv.style.color = 'black';
+    paragraphCv.style.transition = 'background-color 300ms, color 300ms';
 })
 
 btnContact.addEventListener('mouseenter', function(){
     iconMenu[0].style.transform = 'rotate(45deg)';
     iconMenu[0].style.transition = 'transform 500ms';
+
+    paragraphContact.style.backgroundColor = 'black';
+    paragraphContact.style.color = 'white';
+    paragraphContact.style.transition = 'background-color 300ms, color 300ms';
 })
 
 btnContact.addEventListener('mouseleave', function(){
     iconMenu[0].style.transform = 'rotate(0deg)'
+
+    paragraphContact.style.backgroundColor = 'white';
+    paragraphContact.style.color = 'black';
+    paragraphContact.style.transition = 'background-color 300ms, color 300ms';
 })

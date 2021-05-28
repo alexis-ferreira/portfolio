@@ -60,7 +60,7 @@ btnMenu.addEventListener('mouseenter', function(){
     borderPortfolio.style.transition = 'opacity 1500ms';
 
     btnCv.style.left = '0';
-    btnCv.style.transform = 'rotate(-360deg)'
+    btnCv.style.transform = 'rotate(-360deg)';
     borderCv.style.opacity = '100%';
     borderCv.style.transition = 'opacity 1500ms';
     borderCv.style.transitionDelay = "300ms";
@@ -68,8 +68,8 @@ btnMenu.addEventListener('mouseenter', function(){
     btnContact.style.right = '0';
     btnContact.style.transform = 'rotate(360deg)';
     borderContact.style.opacity = '100%';
-    borderContact.style.transition = 'opacity 1500ms'
-    borderContact.style.transitionDelay = "300ms"
+    borderContact.style.transition = 'opacity 1500ms';
+    borderContact.style.transitionDelay = "300ms";
 
     iconMenu[0].style.fontSize = '50px';
     iconMenu[0].style.border = '1px solid black';
@@ -86,12 +86,12 @@ divMenu.addEventListener('mouseleave', function(){
     btnCv.style.left = '154px';
     btnCv.style.transform = 'rotate(360deg)';
     borderCv.style.opacity = '0%';
-    borderCv.style.transition = 'opacity 500ms'
+    borderCv.style.transition = 'opacity 500ms';
 
     btnContact.style.right = '154px';
     btnContact.style.transform = 'rotate(-360deg)';
     borderContact.style.opacity = '0%';
-    borderContact.style.transition = 'opacity 500ms'
+    borderContact.style.transition = 'opacity 500ms';
 
     iconMenu[0].style.fontSize = '80px';
     iconMenu[0].style.border = '1px solid white';
@@ -126,7 +126,7 @@ btnCv.addEventListener('mouseenter', function(){
 })
 
 btnCv.addEventListener('mouseleave', function(){
-    iconMenu[0].style.transform = 'rotate(0deg)'
+    iconMenu[0].style.transform = 'rotate(0deg)';
 
     paragraphCv.style.backgroundColor = 'white';
     paragraphCv.style.color = 'black';
@@ -143,7 +143,7 @@ btnContact.addEventListener('mouseenter', function(){
 })
 
 btnContact.addEventListener('mouseleave', function(){
-    iconMenu[0].style.transform = 'rotate(0deg)'
+    iconMenu[0].style.transform = 'rotate(0deg)';
 
     paragraphContact.style.backgroundColor = 'white';
     paragraphContact.style.color = 'black';
@@ -177,8 +177,8 @@ if (screen.width <= 450){
                 btnContact.style.right = '20px';
                 btnContact.style.transform = 'rotate(360deg)';
                 borderContact.style.opacity = '100%';
-                borderContact.style.transition = 'opacity 1500ms'
-                borderContact.style.transitionDelay = "300ms"
+                borderContact.style.transition = 'opacity 1500ms';
+                borderContact.style.transitionDelay = "300ms";
             
                 iconMenu[0].style.fontSize = '50px';
                 iconMenu[0].style.border = '1px solid black';
@@ -190,17 +190,17 @@ if (screen.width <= 450){
 
                 btnPortfolio.style.top = '154px';
                 borderPortfolio.style.opacity = '0%';
-                borderPortfolio.style.transition = 'opacity 300ms'
+                borderPortfolio.style.transition = 'opacity 300ms';
 
                 btnCv.style.left = '154px';
                 btnCv.style.transform = 'rotate(360deg)';
                 borderCv.style.opacity = '0%';
-                borderCv.style.transition = 'opacity 500ms'
+                borderCv.style.transition = 'opacity 500ms';
 
                 btnContact.style.right = '154px';
                 btnContact.style.transform = 'rotate(-360deg)';
                 borderContact.style.opacity = '0%';
-                borderContact.style.transition = 'opacity 500ms'
+                borderContact.style.transition = 'opacity 500ms';
 
                 iconMenu[0].style.fontSize = '80px';
                 iconMenu[0].style.border = '1px solid white';
@@ -208,4 +208,46 @@ if (screen.width <= 450){
                 iconMenu[0].style.transitionDelay = '300ms';
             }
         })
+}
+
+
+// REDIRECTION
+
+let linkPortefolio = document.getElementById('linkPortfolio');
+// console.log(linkPortfolio);
+
+linkPortefolio.addEventListener('click', redirection);
+
+function redirection(){
+    setTimeout(function(){
+        window.location.href = "../portfolio-page/portfolio.html";
+    }, 2000)
+
+    btnPortfolio.style.top = '154px';
+    borderPortfolio.style.opacity = '0%';
+    borderPortfolio.style.transition = 'opacity 300ms';
+
+    btnCv.style.left = '154px';
+    btnCv.style.transform = 'rotate(360deg)';
+    borderCv.style.opacity = '0%';
+    borderCv.style.transition = 'opacity 500ms';
+
+    btnContact.style.right = '154px';
+    btnContact.style.transform = 'rotate(-360deg)';
+    borderContact.style.opacity = '0%';
+    borderContact.style.transition = 'opacity 500ms';
+
+    iconMenu[0].style.fontSize = '80px';
+    iconMenu[0].style.border = '1px solid white';
+    iconMenu[0].style.transition = 'font-size 500ms, border 1000ms';
+    iconMenu[0].style.transitionDelay = '300ms';
+
+    titlePage.style.opacity = "0";
+    titlePage.style.transition = "opacity 1000ms";
+
+    paragraphDev.style.opacity = '0';
+    paragraphDev.style.transition = "opacity 1000ms";
+    
+    divMenu.style.opacity = '0';
+    divMenu.style.transition = "opacity 1000ms";
 }

@@ -20,6 +20,9 @@ main .container-screen>.title>h1
     opacity: 0;
 
     transition: opacity 2s;
+    transition-delay: 500ms;
+
+    text-align: center;
 }
 
 main .container-screen>.title>p
@@ -33,7 +36,7 @@ main .container-screen>.title>p
     opacity: 0;
 
     transition: opacity 2s;
-    transition-delay: 500ms;
+    transition-delay: 1000ms;
 }
 
 /* ------- MENU ------- */
@@ -80,7 +83,7 @@ main .container-screen #container-menu
     opacity: 0;
 
     transition: opacity 2s;
-    transition-delay: 1000ms;
+    transition-delay: 1500ms;
 }
 
 main .container-screen #container-menu #btn-menu

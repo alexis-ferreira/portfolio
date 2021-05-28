@@ -38,22 +38,32 @@ let paragraphCv = document.getElementById('p-cv');
 
 let paragraphContact = document.getElementById('p-contact');
 
+let titlePage = document.getElementById('title');
+// console.log(titlePage);
 
+let paragraphDev = document.getElementById('p-dev');
+// console.log(paragraphDev);
 
 
 
 // SCRIPT
 
+document.addEventListener('DOMContentLoaded', function(){
+    titlePage.style.opacity = "1";
+    paragraphDev.style.opacity = '1';
+    divMenu.style.opacity = '1';
+})
+
 btnMenu.addEventListener('mouseenter', function(){
     btnPortfolio.style.top = '0';
     borderPortfolio.style.opacity = '100%';
-    borderPortfolio.style.transition = 'opacity 1500ms'
+    borderPortfolio.style.transition = 'opacity 1500ms';
 
     btnCv.style.left = '0';
     btnCv.style.transform = 'rotate(-360deg)'
     borderCv.style.opacity = '100%';
-    borderCv.style.transition = 'opacity 1500ms'
-    borderCv.style.transitionDelay = "300ms"
+    borderCv.style.transition = 'opacity 1500ms';
+    borderCv.style.transitionDelay = "300ms";
 
     btnContact.style.right = '0';
     btnContact.style.transform = 'rotate(360deg)';

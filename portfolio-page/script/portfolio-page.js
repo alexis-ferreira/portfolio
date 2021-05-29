@@ -5,6 +5,9 @@
 let titlePortfolio = document.getElementById('title');
 // console.log(titlePortfolio);
 
+let description = document.getElementById('description');
+// console.log(description);
+
 let widthScreen = (window.innerWidth);
 // console.log(widthScreen);
 
@@ -34,6 +37,10 @@ document.addEventListener('DOMContentLoaded', function(){
     titlePortfolio.style.opacity = '1';
     titlePortfolio.style.marginLeft = '100px';
     titlePortfolio.style.transitionDelay = '500ms';
+
+    description.style.opacity = '1'
+    description.style.transitionDelay = '500ms'
+    description.style.marginRight = '100px'
 
     sectionHeader.style.height = heightScreen + 'px';
 

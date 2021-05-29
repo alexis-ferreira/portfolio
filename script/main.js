@@ -44,14 +44,31 @@ let titlePage = document.getElementById('title');
 let paragraphDev = document.getElementById('p-dev');
 // console.log(paragraphDev);
 
+let windowWidth = window.innerWidth;
+// console.log(screenWidth);
+
+let windowHeight = window.innerHeight;
+// console.log(screenHeight);
+
+let divWindow = document.getElementsByClassName('container-screen');
+divWindow = divWindow[0];
+console.log(divWindow);
+
+
+
+
 
 
 // SCRIPT
 
 document.addEventListener('DOMContentLoaded', function(){
     titlePage.style.opacity = "1";
+
     paragraphDev.style.opacity = '1';
+
     divMenu.style.opacity = '1';
+
+    divWindow.style.height = windowHeight + 'px';
 })
 
 btnMenu.addEventListener('mouseenter', function(){
@@ -154,7 +171,7 @@ btnContact.addEventListener('mouseleave', function(){
 
 // RESPONSIVE
 
-if (screen.width <= 450){
+if (windowWidth <= 450){
 
     let menuOpen = false;
     console.log(menuOpen);

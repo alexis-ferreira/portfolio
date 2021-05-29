@@ -7,9 +7,9 @@ body
     background-color: black;
 }
 
-
 main .container-screen>.title
 {
+    margin-top: 100px;
     margin-bottom: 100px;
 }
 
@@ -41,25 +41,12 @@ main .container-screen>.title>p
     transition-delay: 1000ms;
 }
 
-/* ------- MENU ------- */
-
 main .container-screen
 {
-    width: 100%;
-    height: 800px;
-
     margin: 0 auto;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-main .container-screen
-{
-    display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -75,7 +62,9 @@ main .container-screen
 main .container-screen #container-menu
 {
     width: 400px;
-    height: 400px;
+    height: 105px;
+
+    padding-top: 150px;
 
     display: flex;
     justify-content: center;

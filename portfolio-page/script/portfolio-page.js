@@ -22,10 +22,13 @@ let arrowDown = document.getElementsByClassName('fa-chevron-down');
 arrowDown = arrowDown[0];
 // console.log(arrowDown);
 
+let siteArray = document.getElementsByClassName('descriptionPage');
+// console.log(siteArray);
 
 
 
-// SCRIPT 
+
+// SCRIPT
 
 document.addEventListener('DOMContentLoaded', function(){
     titlePortfolio.style.opacity = '1';
@@ -39,4 +42,16 @@ document.addEventListener('DOMContentLoaded', function(){
 
     arrowDown.style.opacity = "1"
     arrowDown.style.transitionDelay = '500ms';
+
+    for (let i = 0; i <siteArray.length; i++){
+        siteArray[i].style.height = heightScreen + 'px';
+    }
 });
+
+
+
+// DEFILEMENT INTO DESCRIPTION PAGE
+
+arrowDown.addEventListener('click', function(){
+    siteArray[0].scrollIntoView({behavior: "smooth"})
+})

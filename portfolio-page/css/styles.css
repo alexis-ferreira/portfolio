@@ -67,9 +67,22 @@ main #header #scrollDown>i
     opacity: 0;
 
     transition: opacity 1s;
+
+    cursor: pointer;
 }
 
 @keyframes scrollDown {
     from {bottom: 60px}
     to {bottom: 50px}
+}
+
+
+
+
+
+/* -------- PORTFOLIO -------- */
+
+main .container-portfolio
+{
+    background-color: white;
 }

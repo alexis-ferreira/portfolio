@@ -161,6 +161,40 @@ if (widthScreen <= 450){
         imgSite1.style.transition = 'box-shadow 1s, z-index 1s'
     })
 
+    arrowUp.addEventListener('click', function(){
+        setTimeout(function(){
+            sectionHeader.scrollIntoView({behavior: "smooth"});
+        }, 1100)
+    
+        titleLoopStudio.style.left = '0';
+        titleLoopStudio.style.transition = 'left 500ms, opacity 1s';
+        titleLoopStudio.style.opacity = '0';
+    
+        bgTitleLoopStudio.style.width = '0';
+        bgTitleLoopStudio.style.transition = 'width 1000ms';
+        bgTitleLoopStudio.style.transitionDelay = '300ms';
+    
+        site1Page.style.backgroundColor = 'black';
+        site1Page.style.transition = 'background-color 200ms'
+        site1Page.style.transitionDelay = '1000ms'
+    
+        imgSite1.style.height = '0';
+        imgSite1.style.transition = 'height 1000ms, opacity 2s';
+        imgSite1.style.opacity = '0'
+    
+        imgSite1Responsive.style.height = '0';
+        imgSite1Responsive.style.transition = 'height 1000ms, opacity 2s';
+        imgSite1Responsive.style.opacity = '0';
+    
+        arrowUp.style.opacity = '0';
+        arrowUp.style.transition = 'opacity 1s';
+        arrowUp.style.transitionDelay = '1000ms';
+    
+        githubSite1.style.left = '-80px';
+        githubSite1.style.opacity = '0';
+        githubSite1.style.transition = 'left 1s, opacity 1000ms';
+    });
+
 } else {
     
     arrowDown.addEventListener('click', function(){

@@ -33,9 +33,6 @@ let siteArray = document.getElementsByClassName('descriptionPage');
 
 // SCRIPT
 
-window.addEventListener('load', function(){
-    sectionHeader.scrollIntoView()
-})
 
 document.addEventListener('DOMContentLoaded', function(){
     titlePortfolio.style.opacity = '1';
@@ -58,6 +55,8 @@ document.addEventListener('DOMContentLoaded', function(){
 
     arrowDown.style.opacity = "1"
     arrowDown.style.transitionDelay = '500ms';
+
+    sectionHeader.scrollIntoView()
 
     for (let i = 0; i <siteArray.length; i++){
         siteArray[i].style.height = heightScreen + 'px';

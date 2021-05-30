@@ -116,6 +116,35 @@ if (widthScreen <= 450){
         document.body.style.overflow = 'hidden';
     }
 
+    document.addEventListener('DOMContentLoaded', function(){
+        titlePortfolio.style.opacity = '1';
+        titlePortfolio.style.marginLeft = '0px';
+        titlePortfolio.style.transitionDelay = '500ms';
+    
+        description.style.opacity = '1'
+        description.style.transitionDelay = '500ms'
+        
+        if (widthScreen <= 450){
+        description.style.margin = '150px auto 0 auto'
+        } else{
+        description.style.marginRight = '100px'
+        }
+    
+        sectionHeader.style.height = heightScreen + 'px';
+    
+        arrowLeft.style.opacity = '1';
+        arrowLeft.style.transitionDelay = '500ms';
+    
+        arrowDown.style.opacity = "1"
+        arrowDown.style.transitionDelay = '500ms';
+    
+        sectionHeader.scrollIntoView()
+    
+        for (let i = 0; i <siteArray.length; i++){
+            siteArray[i].style.height = heightScreen + 'px';
+        }
+    });
+
     arrowDown.addEventListener('click', function(){
 
         sectionHeader.style.opacity ='0';

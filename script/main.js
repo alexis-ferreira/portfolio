@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 // ---------- MENU -----------
 
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function(){
         alexisPicture.style.transition = 'right 1500ms, opacity 1s';
         alexisPicture.style.transitionDelay = '1000ms';
     }
-})
+});
 
 btnMenu.addEventListener('mouseenter', function(){
     btnPortfolio.style.top = '0';
@@ -113,7 +113,7 @@ btnMenu.addEventListener('mouseenter', function(){
 divMenu.addEventListener('mouseleave', function(){
     btnPortfolio.style.top = '154px';
     borderPortfolio.style.opacity = '0%';
-    borderPortfolio.style.transition = 'opacity 300ms'
+    borderPortfolio.style.transition = 'opacity 300ms';
 
     btnCv.style.left = '154px';
     btnCv.style.transform = 'rotate(360deg)';
@@ -138,15 +138,15 @@ btnPortfolio.addEventListener('mouseenter', function(){
     paragraphPortfolio.style.backgroundColor = 'black';
     paragraphPortfolio.style.color = 'white';
     paragraphPortfolio.style.transition = 'background-color 300ms, color 300ms';
-})
+});
 
 btnPortfolio.addEventListener('mouseleave', function(){
-    iconMenu[0].style.transform = 'rotate(0deg)'
+    iconMenu[0].style.transform = 'rotate(0deg)';
 
     paragraphPortfolio.style.backgroundColor = 'white';
     paragraphPortfolio.style.color = 'black';
     paragraphPortfolio.style.transition = 'background-color 300ms, color 300ms';
-})
+});
 
 btnCv.addEventListener('mouseenter', function(){
     iconMenu[0].style.transform = 'rotate(-135deg)';
@@ -155,7 +155,7 @@ btnCv.addEventListener('mouseenter', function(){
     paragraphCv.style.backgroundColor = 'black';
     paragraphCv.style.color = 'white';
     paragraphCv.style.transition = 'background-color 300ms, color 300ms';
-})
+});
 
 btnCv.addEventListener('mouseleave', function(){
     iconMenu[0].style.transform = 'rotate(0deg)';
@@ -163,7 +163,7 @@ btnCv.addEventListener('mouseleave', function(){
     paragraphCv.style.backgroundColor = 'white';
     paragraphCv.style.color = 'black';
     paragraphCv.style.transition = 'background-color 300ms, color 300ms';
-})
+});
 
 btnContact.addEventListener('mouseenter', function(){
     iconMenu[0].style.transform = 'rotate(45deg)';
@@ -172,7 +172,7 @@ btnContact.addEventListener('mouseenter', function(){
     paragraphContact.style.backgroundColor = 'black';
     paragraphContact.style.color = 'white';
     paragraphContact.style.transition = 'background-color 300ms, color 300ms';
-})
+});
 
 btnContact.addEventListener('mouseleave', function(){
     iconMenu[0].style.transform = 'rotate(0deg)';
@@ -180,7 +180,7 @@ btnContact.addEventListener('mouseleave', function(){
     paragraphContact.style.backgroundColor = 'white';
     paragraphContact.style.color = 'black';
     paragraphContact.style.transition = 'background-color 300ms, color 300ms';
-})
+});
 
 
 
@@ -201,7 +201,7 @@ if (windowWidth <= 450){
                 borderPortfolio.style.transition = 'opacity 1500ms';
             
                 btnCv.style.left = '20px';
-                btnCv.style.transform = 'rotate(-360deg)'
+                btnCv.style.transform = 'rotate(-360deg)';
                 borderCv.style.opacity = '100%';
                 borderCv.style.transition = 'opacity 1500ms';
                 borderCv.style.transitionDelay = "300ms";
@@ -218,7 +218,7 @@ if (windowWidth <= 450){
                 iconMenu[0].style.transitionDelay = '300ms';
 
             }else {
-                menuOpen = false
+                menuOpen = false;
 
                 btnPortfolio.style.top = '154px';
                 borderPortfolio.style.opacity = '0%';
@@ -239,7 +239,7 @@ if (windowWidth <= 450){
                 iconMenu[0].style.transition = 'font-size 500ms, border 1000ms';
                 iconMenu[0].style.transitionDelay = '300ms';
             }
-        })
+        });
 }
 
 
@@ -253,7 +253,7 @@ linkPortefolio.addEventListener('click', redirection);
 function redirection(){
     setTimeout(function(){
         window.location.href = "./portfolio.html";
-    }, 1100)
+    }, 1100);
 
     btnPortfolio.style.top = '154px';
     borderPortfolio.style.opacity = '0%';

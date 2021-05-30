@@ -274,6 +274,14 @@ main .container-screen #container-menu>#portfolio>a>p, main .container-screen #c
         position: absolute;
         right: -250px;
         left: auto;
+        user-select: none;
+    }
+
+    main .container-screen .title > #containerImg > img
+    {
+        user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
     }
 
     main .container-screen .title > #containerImg > #blur

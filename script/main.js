@@ -237,7 +237,7 @@ linkPortefolio.addEventListener('click', redirection);
 
 function redirection(){
     setTimeout(function(){
-        window.location.href = "https://alexis-ferreira.github.io/portfolio-project/portfolio.html";
+        window.location.href = "./portfolio.html";
     }, 1100)
 
     btnPortfolio.style.top = '154px';

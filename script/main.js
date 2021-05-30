@@ -237,7 +237,7 @@ linkPortefolio.addEventListener('click', redirection);
 
 function redirection(){
     setTimeout(function(){
-        window.location.href = "/portfolio.html";
+        window.location.href = "/portfolio-project/portfolio.html";
     }, 1100)
 
     btnPortfolio.style.top = '154px';

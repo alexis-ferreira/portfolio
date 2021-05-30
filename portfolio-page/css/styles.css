@@ -19,6 +19,16 @@ body
 main>#header
 {
     position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main #header>#arrowLeft
+{
+    position: absolute;
+    left: 0px;
 }
 
 main #header #arrowLeft a .fa-arrow-left
@@ -42,7 +52,7 @@ main>#header>h2
     font-size: 100px;
 
     margin-top: 100px;
-    margin-left: 10px;
+    margin-left: -500px;
 
     opacity: 0;
 
@@ -60,7 +70,7 @@ main>#header>p
     text-align: end;
 
     margin-top: 150px;
-    margin-right: 50px;
+    margin-right: -900px;
 
     line-height: 40px;
 

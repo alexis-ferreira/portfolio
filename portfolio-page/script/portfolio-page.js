@@ -39,7 +39,7 @@ let siteArray = document.getElementsByClassName('descriptionPage');
 
 document.addEventListener('DOMContentLoaded', function(){
     titlePortfolio.style.opacity = '1';
-    titlePortfolio.style.marginLeft = '100px';
+    titlePortfolio.style.marginLeft = '-300px';
     titlePortfolio.style.transitionDelay = '500ms';
 
     description.style.opacity = '1'
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function(){
     if (widthScreen <= 450){
     description.style.margin = '150px auto 0 auto'
     } else{
-    description.style.marginRight = '100px'
+    description.style.marginRight = '-700px'
     }
 
     sectionHeader.style.height = heightScreen + 'px';

@@ -113,7 +113,7 @@ arrowDown.addEventListener('click', function(){
     titleLoopStudio.style.transitionDelay = '1000ms';
     titleLoopStudio.style.opacity = '1';
 
-    bgTitleLoopStudio.style.width = '250px';
+    bgTitleLoopStudio.style.width = '290px';
     bgTitleLoopStudio.style.transition = 'width 1000ms';
     bgTitleLoopStudio.style.transitionDelay = '800ms';
 
@@ -125,7 +125,7 @@ arrowDown.addEventListener('click', function(){
     imgSite1.style.transitionDelay = '1000ms';
     imgSite1.style.opacity = '1'
 
-    imgSite1Responsive.style.height = '570px';
+    imgSite1Responsive.style.height = '550px';
     imgSite1Responsive.style.transition = 'height 1000ms, opacity 2s';
     imgSite1Responsive.style.transitionDelay = '1000ms';
     imgSite1Responsive.style.opacity = '1';

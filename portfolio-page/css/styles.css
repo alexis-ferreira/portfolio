@@ -46,6 +46,8 @@ main>#header>h2
 
     opacity: 0;
 
+    text-transform: uppercase;
+
     transition: opacity 1s, margin-left 1s;
 }
 
@@ -182,6 +184,8 @@ main .container-portfolio .site-1 .titreH2>#titleSite1
 
     color: white;
 
+    text-transform: uppercase;
+
     opacity: 0;
 }
 
@@ -215,7 +219,7 @@ main .container-portfolio .site-1 .img-site-responsive
     overflow: auto;
 
     position: absolute;
-    top: 200px;
+    top: 180px;
     left: 850px;
 
     scrollbar-color: #D548EB #34267000;

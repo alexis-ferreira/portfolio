@@ -101,10 +101,8 @@ let githubSite1 = document.getElementById('lienGithubSite1');
 // console.log(githubSite1);
 
 let bgGithubSite1 = document.getElementsByClassName('fa-github-square');
-// bgGithubSite1 = bgGithubSite1[0];
+bgGithubSite1 = bgGithubSite1[0];
 // console.log(bgGithubSite1);
-
-
 
 // ------ RESPONSIVE 
 
@@ -232,18 +230,56 @@ if (widthScreen <= 450){
         githubSite1.style.opacity = '0';
         githubSite1.style.transition = 'right 1s, opacity 1000ms';
     });
-    
-    githubSite1.addEventListener('mouseenter', function(){
-        bgGithubSite1.style.backgroundColor = '#D548EB';
-        bgGithubSite1.style.transition = 'background-color 300ms';
+
+    imgSite1.addEventListener('mouseenter', function(){
+        imgSite1.style.position = 'relative';
+        imgSite1.style.transition = 'box-shadow 1s, z-index 1s';
+        imgSite1.style.boxShadow = '0 0 100px black';
+
+        imgSite1Responsive.style.left = '920px';
+        imgSite1Responsive.style.transition = 'left 1s, box-shadow 1s';
+        imgSite1Responsive.style.boxShadow = ' 0 0 0px black';
+
+        setTimeout(() => {
+        imgSite1Responsive.style.left = '850px';
+        }, 1000);
+
+        setTimeout(() => {
+        imgSite1.style.zIndex = '3';
+        }, 800);
+
     })
-    
-    githubSite1.addEventListener('mouseleave', function(){
-        bgGithubSite1.style.backgroundColor = 'white';
-        bgGithubSite1.style.transition = 'background-color 300ms';
+
+    imgSite1.addEventListener('mouseleave', function(){
+        imgSite1.style.position = 'relative';
+        imgSite1.style.boxShadow = '0 0 0px black';
+        imgSite1.style.transition = 'box-shadow 1s, z-index 1s';
+
+        imgSite1Responsive.style.boxShadow = ' 0 0 100px black';
+
+        imgSite1Responsive.style.left = '920px';
+        imgSite1Responsive.style.transition = 'left 1s, box-shadow 1s';
+
+        setTimeout(() => {
+        imgSite1Responsive.style.left = '850px';
+        }, 1000);
+
+        setTimeout(() => {
+        imgSite1.style.zIndex = '2';
+        }, 800);
     })
 }
 
+// DEPLACER A 905px left
+// settimeout sur le z index
+// REVENIR A 850px
 
+githubSite1.addEventListener('mouseenter', function(){
+    bgGithubSite1.style.backgroundColor = '#D548EB';
+    bgGithubSite1.style.transition = 'background-color 300ms';
+})
 
-
+githubSite1.addEventListener('mouseleave', function(){
+    bgGithubSite1.style.backgroundColor = 'white';
+    bgGithubSite1.style.transition = 'background-color 300ms';
+})

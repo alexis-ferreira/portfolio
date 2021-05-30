@@ -204,6 +204,10 @@ main .container-portfolio .site-1 .img-site
     opacity: 0;
 
     border-bottom-left-radius: 20px;
+
+    position: relative;
+
+    z-index: 2;
 }
 
 main .container-portfolio .site-1 .img-site>#imgLoopStudio

@@ -101,85 +101,149 @@ let githubSite1 = document.getElementById('lienGithubSite1');
 // console.log(githubSite1);
 
 let bgGithubSite1 = document.getElementsByClassName('fa-github-square');
-bgGithubSite1 = bgGithubSite1[0];
+// bgGithubSite1 = bgGithubSite1[0];
 // console.log(bgGithubSite1);
 
 
-arrowDown.addEventListener('click', function(){
+
+// ------ RESPONSIVE 
+
+if (widthScreen <= 450){
+    arrowDown.addEventListener('click', function(){
     
-    titleLoopStudio.style.left = '50px';
-    titleLoopStudio.style.transition = 'left 500ms, opacity 1s';
-    titleLoopStudio.style.transitionDelay = '1000ms';
-    titleLoopStudio.style.opacity = '1';
+        titleLoopStudio.style.left = '50px';
+        titleLoopStudio.style.transition = 'left 500ms, opacity 1s';
+        titleLoopStudio.style.transitionDelay = '1000ms';
+        titleLoopStudio.style.opacity = '1';
+    
+        bgTitleLoopStudio.style.width = '290px';
+        bgTitleLoopStudio.style.transition = 'width 1000ms';
+        bgTitleLoopStudio.style.transitionDelay = '800ms';
+    
+        site1Page.style.backgroundColor = '#342670';
+        site1Page.style.transition = 'background-color 1s';
+    
+        imgSite1.style.height = '480px';
+        imgSite1.style.transition = 'height 1000ms, opacity 2s';
+        imgSite1.style.transitionDelay = '1000ms';
+        imgSite1.style.opacity = '1';
+    
+        imgSite1Responsive.style.height = '500px';
+        imgSite1Responsive.style.transition = 'height 1000ms, opacity 2s';
+        imgSite1Responsive.style.transitionDelay = '1000ms';
+        imgSite1Responsive.style.opacity = '1';
+    
+        arrowUp.style.opacity = '1';
+        arrowUp.style.transition = 'opacity 1s';
+        arrowUp.style.transitionDelay = '1000ms';
+    
+        githubSite1.style.left = '50px';
+        githubSite1.style.transition = 'left 1s, opacity 10ms';
+        githubSite1.style.transitionDelay = '2000ms';
+        githubSite1.style.opacity = '1';
+    })
 
-    bgTitleLoopStudio.style.width = '290px';
-    bgTitleLoopStudio.style.transition = 'width 1000ms';
-    bgTitleLoopStudio.style.transitionDelay = '800ms';
+    imgSite1.addEventListener('click', function(){
+        imgSite1.style.zIndex = '3';
+        imgSite1.style.boxShadow = '0 0 100px black';
+        imgSite1.style.transition = 'box-shadow 1s, z-index 1s'
 
-    site1Page.style.backgroundColor = '#342670';
-    site1Page.style.transition = 'background-color 1s'
+        imgSite1Responsive.style.zIndex = '2';
+        imgSite1Responsive.style.boxShadow = '0 0 0 black';
+        imgSite1Responsive.style.transition = 'box-shadow 1s'
+    })
 
-    imgSite1.style.height = '500px';
-    imgSite1.style.transition = 'height 1000ms, opacity 2s';
-    imgSite1.style.transitionDelay = '1000ms';
-    imgSite1.style.opacity = '1'
+    imgSite1Responsive.addEventListener('click', function(){
+        imgSite1Responsive.style.zIndex = '3';
+        imgSite1Responsive.style.boxShadow = '0 0 100px black';
+        imgSite1Responsive.style.transition = 'box-shadow 1s'
 
-    imgSite1Responsive.style.height = '550px';
-    imgSite1Responsive.style.transition = 'height 1000ms, opacity 2s';
-    imgSite1Responsive.style.transitionDelay = '1000ms';
-    imgSite1Responsive.style.opacity = '1';
+        imgSite1.style.zIndex = '2';
+        imgSite1.style.boxShadow = '0 0 0 black';
+        imgSite1.style.transition = 'box-shadow 1s, z-index 1s'
+    })
 
-    arrowUp.style.opacity = '1';
-    arrowUp.style.transition = 'opacity 1s';
-    arrowUp.style.transitionDelay = '1000ms';
+} else {
+    
+    arrowDown.addEventListener('click', function(){
+    
+        titleLoopStudio.style.left = '30px';
+        titleLoopStudio.style.transition = 'left 500ms, opacity 1s';
+        titleLoopStudio.style.transitionDelay = '1000ms';
+        titleLoopStudio.style.opacity = '1';
+    
+        bgTitleLoopStudio.style.width = '200px';
+        bgTitleLoopStudio.style.transition = 'width 1000ms';
+        bgTitleLoopStudio.style.transitionDelay = '800ms';
+    
+        site1Page.style.backgroundColor = '#342670';
+        site1Page.style.transition = 'background-color 1s'
+    
+        imgSite1.style.height = '500px';
+        imgSite1.style.transition = 'height 1000ms, opacity 2s';
+        imgSite1.style.transitionDelay = '1000ms';
+        imgSite1.style.opacity = '1'
+    
+        imgSite1Responsive.style.height = '500px';
+        imgSite1Responsive.style.transition = 'height 1000ms, opacity 2s';
+        imgSite1Responsive.style.transitionDelay = '1000ms';
+        imgSite1Responsive.style.opacity = '1';
+    
+        arrowUp.style.opacity = '1';
+        arrowUp.style.transition = 'opacity 1s';
+        arrowUp.style.transitionDelay = '1000ms';
+    
+        githubSite1.style.right = '50px';
+        githubSite1.style.transition = 'right 1s, opacity 10ms';
+        githubSite1.style.transitionDelay = '2000ms';
+        githubSite1.style.opacity = '1';
+    })
+    
+    arrowUp.addEventListener('click', function(){
+        setTimeout(function(){
+            sectionHeader.scrollIntoView({behavior: "smooth"});
+        }, 1100)
+    
+        titleLoopStudio.style.left = '0';
+        titleLoopStudio.style.transition = 'left 500ms, opacity 1s';
+        titleLoopStudio.style.opacity = '0';
+    
+        bgTitleLoopStudio.style.width = '0';
+        bgTitleLoopStudio.style.transition = 'width 1000ms';
+        bgTitleLoopStudio.style.transitionDelay = '300ms';
+    
+        site1Page.style.backgroundColor = 'black';
+        site1Page.style.transition = 'background-color 200ms'
+        site1Page.style.transitionDelay = '1000ms'
+    
+        imgSite1.style.height = '0';
+        imgSite1.style.transition = 'height 1000ms, opacity 2s';
+        imgSite1.style.opacity = '0'
+    
+        imgSite1Responsive.style.height = '0';
+        imgSite1Responsive.style.transition = 'height 1000ms, opacity 2s';
+        imgSite1Responsive.style.opacity = '0';
+    
+        arrowUp.style.opacity = '0';
+        arrowUp.style.transition = 'opacity 1s';
+        arrowUp.style.transitionDelay = '1000ms';
+    
+        githubSite1.style.right = '-80px';
+        githubSite1.style.opacity = '0';
+        githubSite1.style.transition = 'right 1s, opacity 1000ms';
+    });
+    
+    githubSite1.addEventListener('mouseenter', function(){
+        bgGithubSite1.style.backgroundColor = '#D548EB';
+        bgGithubSite1.style.transition = 'background-color 300ms';
+    })
+    
+    githubSite1.addEventListener('mouseleave', function(){
+        bgGithubSite1.style.backgroundColor = 'white';
+        bgGithubSite1.style.transition = 'background-color 300ms';
+    })
+}
 
-    githubSite1.style.right = '50px';
-    githubSite1.style.transition = 'right 1s, opacity 10ms';
-    githubSite1.style.transitionDelay = '2000ms';
-    githubSite1.style.opacity = '1';
-})
 
-arrowUp.addEventListener('click', function(){
-    setTimeout(function(){
-        sectionHeader.scrollIntoView({behavior: "smooth"});
-    }, 1100)
 
-    titleLoopStudio.style.left = '0';
-    titleLoopStudio.style.transition = 'left 500ms, opacity 1s';
-    titleLoopStudio.style.opacity = '0';
-
-    bgTitleLoopStudio.style.width = '0';
-    bgTitleLoopStudio.style.transition = 'width 1000ms';
-    bgTitleLoopStudio.style.transitionDelay = '300ms';
-
-    site1Page.style.backgroundColor = 'black';
-    site1Page.style.transition = 'background-color 200ms'
-    site1Page.style.transitionDelay = '1000ms'
-
-    imgSite1.style.height = '0';
-    imgSite1.style.transition = 'height 1000ms, opacity 2s';
-    imgSite1.style.opacity = '0'
-
-    imgSite1Responsive.style.height = '0';
-    imgSite1Responsive.style.transition = 'height 1000ms, opacity 2s';
-    imgSite1Responsive.style.opacity = '0';
-
-    arrowUp.style.opacity = '0';
-    arrowUp.style.transition = 'opacity 1s';
-    arrowUp.style.transitionDelay = '1000ms';
-
-    githubSite1.style.right = '-80px';
-    githubSite1.style.opacity = '0';
-    githubSite1.style.transition = 'right 1s, opacity 1000ms';
-});
-
-githubSite1.addEventListener('mouseenter', function(){
-    bgGithubSite1.style.backgroundColor = '#D548EB';
-    bgGithubSite1.style.transition = 'background-color 300ms';
-})
-
-githubSite1.addEventListener('mouseleave', function(){
-    bgGithubSite1.style.backgroundColor = 'white';
-    bgGithubSite1.style.transition = 'background-color 300ms';
-})
 

@@ -286,4 +286,61 @@ main .container-portfolio .site-1 >#lienGithubSite1>a>i
         margin-top: 150px;
         width: 370px;
     }
+
+
+
+    /* ------- SITE 1 */
+
+    main .container-portfolio .site-1 .img-site {
+        width: 300px;
+        height: 0;
+        overflow: auto;
+        scrollbar-color: #D548EB #342670;
+        margin-left: 20px;
+        margin-top: 50px;
+        opacity: 0;
+        border-bottom-left-radius: 20px;
+        position: relative;
+    }
+
+    main .container-portfolio .site-1 .img-site-responsive {
+        width: 250px;
+        height: 0;
+        overflow: auto;
+        position: absolute;
+        top: 180px;
+        left: 150px;
+        scrollbar-color: #D548EB #34267000;
+        opacity: 0;
+        border-bottom-left-radius: 20px;
+        z-index: 2;
+    }
+
+    main .container-portfolio .site-1 .titreH2 > #titleSite1 {
+        font-size: 30px;
+    }
+
+    main .container-portfolio .site-1 > .titreH2 > #bgTitleH2 {
+        height: 35px;
+        width: 0px;
+        background-color: black;
+        position: absolute;
+        bottom: -17px;
+    }
+
+    main .descriptionPage .titreH2 > #arrowUp > i {
+        font-size: 30px;
+        margin-top: 10px;
+        animation: scrollUp 800ms ease-in-out 1500ms infinite alternate;
+    }
+
+    main .container-portfolio .site-1 > #lienGithubSite1 {
+        position: absolute;
+        bottom: 8px;
+        left: -60px;
+        font-size: 60px;
+        z-index: 2;
+        opacity: 0;
+        cursor: pointer;
+    }
 }

@@ -130,6 +130,11 @@ main .container-portfolio
 
 
 
+
+
+
+
+
 /* -------- SITE 1  */
 
 main .descriptionPage .titreH2>#arrowUp
@@ -144,7 +149,7 @@ main .descriptionPage .titreH2>#arrowUp
 
 main .descriptionPage .titreH2>#arrowUp>i
 {
-    font-size: 40px;
+    font-size: 30px;
 
     margin-top: 10px;
 
@@ -153,7 +158,7 @@ main .descriptionPage .titreH2>#arrowUp>i
 
 @keyframes scrollUp {
     from {margin-top: 10px}
-    to {margin-top: 20px}
+    to {margin-top: 15px}
 }
 
 main .container-portfolio .site-1>.titreH2
@@ -273,6 +278,50 @@ main .container-portfolio .site-1 >#lienGithubSite1>a>i
     line-height: 40px;
 }
 
+main .container-portfolio .site-1>.arrowDown2
+{
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 10px;
+
+    width: 100%;
+
+    animation: nextSite 800ms ease-in-out 1500ms infinite alternate;
+}
+
+main .container-portfolio .site-1>.arrowDown2>.fa-chevron-down
+{
+    font-size: 30px;
+
+    color: white;
+
+    cursor: pointer;
+
+    opacity: 0;
+}
+
+@keyframes nextSite {
+    from {bottom: 10px}
+    to {bottom: 15px}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------- SITE 2 */
 
 
 

@@ -22,7 +22,6 @@ arrowLeft = arrowLeft[0];
 // console.log(arrowLeft);
 
 let arrowDown = document.getElementsByClassName('fa-chevron-down');
-arrowDown = arrowDown[0];
 // console.log(arrowDown);
 
 let btnArrowDown = document.getElementById('scrollDown');
@@ -56,8 +55,8 @@ document.addEventListener('DOMContentLoaded', function(){
     arrowLeft.style.opacity = '1';
     arrowLeft.style.transitionDelay = '500ms';
 
-    arrowDown.style.opacity = "1"
-    arrowDown.style.transitionDelay = '500ms';
+    arrowDown[0].style.opacity = "1"
+    arrowDown[0].style.transitionDelay = '500ms';
 
     sectionHeader.scrollIntoView()
 
@@ -68,7 +67,8 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 
-// DEFILEMENT INTO DESCRIPTION PAGE
+
+
 
 
 
@@ -135,8 +135,8 @@ if (widthScreen <= 450){
         arrowLeft.style.opacity = '1';
         arrowLeft.style.transitionDelay = '500ms';
     
-        arrowDown.style.opacity = "1"
-        arrowDown.style.transitionDelay = '500ms';
+        arrowDown[0].style.opacity = "1"
+        arrowDown[0].style.transitionDelay = '500ms';
     
         sectionHeader.scrollIntoView()
     
@@ -145,7 +145,7 @@ if (widthScreen <= 450){
         }
     });
 
-    arrowDown.addEventListener('click', function(){
+    arrowDown[0].addEventListener('click', function(){
 
         sectionHeader.style.opacity ='0';
         sectionHeader.style.transition = 'opacity 800ms';
@@ -181,6 +181,10 @@ if (widthScreen <= 450){
         arrowUp.style.opacity = '1';
         arrowUp.style.transition = 'opacity 1s';
         arrowUp.style.transitionDelay = '1000ms';
+
+        arrowDown[1].style.opacity = '1';
+        arrowDown[1].style.transition = 'opacity 1s';
+        arrowDown[1].style.transitionDelay = '1000ms';
     
         githubSite1.style.left = '50px';
         githubSite1.style.transition = 'left 1s, opacity 10ms';
@@ -248,11 +252,11 @@ if (widthScreen <= 450){
 
 } else {
 
-    arrowDown.addEventListener('click', function(){
+    arrowDown[0].addEventListener('click', function(){
         siteArray[0].scrollIntoView({behavior: "smooth"})
     })
     
-    arrowDown.addEventListener('click', function(){
+    arrowDown[0].addEventListener('click', function(){
     
         titleLoopStudio.style.left = '30px';
         titleLoopStudio.style.transition = 'left 500ms, opacity 1s';
@@ -279,6 +283,10 @@ if (widthScreen <= 450){
         arrowUp.style.opacity = '1';
         arrowUp.style.transition = 'opacity 1s';
         arrowUp.style.transitionDelay = '1000ms';
+
+        arrowDown[1].style.opacity = '1';
+        arrowDown[1].style.transition = 'opacity 1s';
+        arrowDown[1].style.transitionDelay = '1000ms';
     
         githubSite1.style.right = '50px';
         githubSite1.style.transition = 'right 1s, opacity 10ms';
@@ -368,3 +376,47 @@ githubSite1.addEventListener('mouseleave', function(){
     bgGithubSite1.style.backgroundColor = 'white';
     bgGithubSite1.style.transition = 'background-color 300ms';
 })
+
+
+
+// -------- REDIRECTION SITE 1
+
+let arrowDown1 = arrowDown[1]
+console.log(arrowDown1);
+// console.log(arrowDown);
+
+// console.log(siteArray[1]);
+
+arrowDown1.addEventListener('click', function(){
+    setTimeout(function(){
+        siteArray[1].scrollIntoView({behavior: "smooth"});
+    }, 1100)
+
+    titleLoopStudio.style.left = '0';
+    titleLoopStudio.style.transition = 'left 500ms, opacity 1s';
+    titleLoopStudio.style.opacity = '0';
+
+    bgTitleLoopStudio.style.width = '0';
+    bgTitleLoopStudio.style.transition = 'width 1000ms';
+    bgTitleLoopStudio.style.transitionDelay = '300ms';
+
+    site1Page.style.backgroundColor = 'black';
+    site1Page.style.transition = 'background-color 200ms'
+    site1Page.style.transitionDelay = '1000ms'
+
+    imgSite1.style.height = '0';
+    imgSite1.style.transition = 'height 1000ms, opacity 2s';
+    imgSite1.style.opacity = '0'
+
+    imgSite1Responsive.style.height = '0';
+    imgSite1Responsive.style.transition = 'height 1000ms, opacity 2s';
+    imgSite1Responsive.style.opacity = '0';
+
+    arrowUp.style.opacity = '0';
+    arrowUp.style.transition = 'opacity 1s';
+    arrowUp.style.transitionDelay = '1000ms';
+
+    githubSite1.style.right = '-80px';
+    githubSite1.style.opacity = '0';
+    githubSite1.style.transition = 'right 1s, opacity 1000ms';
+});

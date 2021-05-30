@@ -25,6 +25,9 @@ let arrowDown = document.getElementsByClassName('fa-chevron-down');
 arrowDown = arrowDown[0];
 // console.log(arrowDown);
 
+let btnArrowDown = document.getElementById('scrollDown');
+console.log(btnArrowDown);
+
 let siteArray = document.getElementsByClassName('descriptionPage');
 // console.log(siteArray);
 
@@ -67,10 +70,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
 // DEFILEMENT INTO DESCRIPTION PAGE
 
-arrowDown.addEventListener('click', function(){
-    siteArray[0].scrollIntoView({behavior: "smooth"})
-})
-
 
 
 
@@ -110,20 +109,30 @@ if (widthScreen <= 450){
     document.body.style.overflow = 'auto'
 
     for (let i = 0; i < siteArray.length; i++){
-        siteArray[i].style.display = 'none'
+        siteArray[i].style.display = 'none';
+    }
+
+    if (arrowUp.style.opacity = '1'){
+        document.body.style.overflow = 'hidden';
     }
 
     arrowDown.addEventListener('click', function(){
 
+        sectionHeader.style.opacity ='0';
+        sectionHeader.style.transition = 'opacity 800ms';
+
         site1Page.style.display = 'block';
-        siteArray[0].scrollIntoView({behavior: "smooth"})
+
+        setTimeout(() => {
+            siteArray[0].scrollIntoView({behavior: "smooth"})
+        }, 1100);
     
         titleLoopStudio.style.left = '50px';
         titleLoopStudio.style.transition = 'left 500ms, opacity 1s';
         titleLoopStudio.style.transitionDelay = '1000ms';
         titleLoopStudio.style.opacity = '1';
     
-        bgTitleLoopStudio.style.width = '290px';
+        bgTitleLoopStudio.style.width = '250px';
         bgTitleLoopStudio.style.transition = 'width 1000ms';
         bgTitleLoopStudio.style.transitionDelay = '800ms';
     
@@ -174,6 +183,10 @@ if (widthScreen <= 450){
         setTimeout(function(){
             sectionHeader.scrollIntoView({behavior: "smooth"});
         }, 1100)
+
+        sectionHeader.style.opacity ='1';
+        sectionHeader.style.transition = 'opacity 800ms';
+        sectionHeader.style.transitionDelay = '1300ms'
     
         titleLoopStudio.style.left = '0';
         titleLoopStudio.style.transition = 'left 500ms, opacity 1s';
@@ -205,6 +218,10 @@ if (widthScreen <= 450){
     });
 
 } else {
+
+    arrowDown.addEventListener('click', function(){
+        siteArray[0].scrollIntoView({behavior: "smooth"})
+    })
     
     arrowDown.addEventListener('click', function(){
     

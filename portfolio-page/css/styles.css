@@ -76,13 +76,7 @@ main>#header>p>a
     text-decoration: underline white;
 }
 
-main #header #scrollDown
-{
-    display: flex;
-    justify-content: center;
-}
-
-main #header #scrollDown>i
+main #header>i
 {
     color: white;
 
@@ -281,6 +275,7 @@ main .container-portfolio .site-1 >#lienGithubSite1>a>i
     main > #header > h2 {
         color: white;
         font-size: 40px;
+        width: 222px;
     }
 
     main > #header > p {
@@ -346,5 +341,6 @@ main .container-portfolio .site-1 >#lienGithubSite1>a>i
         z-index: 2;
         opacity: 0;
         cursor: pointer;
+        width: 53px;
     }
 }

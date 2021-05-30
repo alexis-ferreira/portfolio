@@ -106,15 +106,15 @@ bgGithubSite1 = bgGithubSite1[0];
 // ------ RESPONSIVE 
 
 if (widthScreen <= 450){
-    document.body.style.overflow = 'auto'
+    // document.body.style.overflow = 'auto'
 
-    for (let i = 0; i < siteArray.length; i++){
-        siteArray[i].style.display = 'none';
-    }
+    // for (let i = 0; i < siteArray.length; i++){
+    //     siteArray[i].style.display = 'none';
+    // }
 
-    if (arrowUp.style.opacity = '1'){
-        document.body.style.overflow = 'hidden';
-    }
+    // if (arrowUp.style.opacity == '0'){   REMPLACER PAR UNE VARIABLE BOOLEENNE
+    //     document.body.style.overflow = 'hidden';
+    // }
 
     document.addEventListener('DOMContentLoaded', function(){
         titlePortfolio.style.opacity = '1';
@@ -154,7 +154,7 @@ if (widthScreen <= 450){
 
         setTimeout(() => {
             siteArray[0].scrollIntoView({behavior: "smooth"})
-        }, 1100);
+        }, 1000);
     
         titleLoopStudio.style.left = '50px';
         titleLoopStudio.style.transition = 'left 500ms, opacity 1s';
@@ -173,7 +173,7 @@ if (widthScreen <= 450){
         imgSite1.style.transitionDelay = '1000ms';
         imgSite1.style.opacity = '1';
     
-        imgSite1Responsive.style.height = '500px';
+        imgSite1Responsive.style.height = '470px';
         imgSite1Responsive.style.transition = 'height 1000ms, opacity 2s';
         imgSite1Responsive.style.transitionDelay = '1000ms';
         imgSite1Responsive.style.opacity = '1';

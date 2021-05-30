@@ -236,8 +236,7 @@ let linkPortefolio = document.getElementById('linkPortfolio');
 linkPortefolio.addEventListener('click', redirection);
 
 function redirection(){
-    setTimeout(function(event){
-        event.preventDefault();
+    setTimeout(function(){
         window.location.href = "portfolio.html";
     }, 1100)
 

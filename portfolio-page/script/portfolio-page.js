@@ -244,6 +244,10 @@ if (widthScreen <= 450){
         arrowUp.style.opacity = '0';
         arrowUp.style.transition = 'opacity 1s';
         arrowUp.style.transitionDelay = '1000ms';
+
+        arrowDown[1].style.opacity = '0';
+        arrowDown[1].style.transition = 'opacity 1s';
+        arrowDown[1].style.transitionDelay = '1000ms';
     
         githubSite1.style.left = '-80px';
         githubSite1.style.opacity = '0';
@@ -321,7 +325,9 @@ if (widthScreen <= 450){
     
         arrowUp.style.opacity = '0';
         arrowUp.style.transition = 'opacity 1s';
-        arrowUp.style.transitionDelay = '1000ms';
+
+        arrowDown[1].style.opacity = '0';
+        arrowDown[1].style.transition = 'opacity 1s';
     
         githubSite1.style.right = '-80px';
         githubSite1.style.opacity = '0';
@@ -379,7 +385,10 @@ githubSite1.addEventListener('mouseleave', function(){
 
 
 
-// -------- REDIRECTION SITE 1
+
+
+
+// -------- REDIRECTION AU SITE 2
 
 let arrowDown1 = arrowDown[1]
 console.log(arrowDown1);
@@ -402,7 +411,7 @@ arrowDown1.addEventListener('click', function(){
 
     site1Page.style.backgroundColor = 'black';
     site1Page.style.transition = 'background-color 200ms'
-    site1Page.style.transitionDelay = '1000ms'
+    site1Page.style.transitionDelay = '500ms'
 
     imgSite1.style.height = '0';
     imgSite1.style.transition = 'height 1000ms, opacity 2s';
@@ -414,7 +423,9 @@ arrowDown1.addEventListener('click', function(){
 
     arrowUp.style.opacity = '0';
     arrowUp.style.transition = 'opacity 1s';
-    arrowUp.style.transitionDelay = '1000ms';
+
+    arrowDown[1].style.opacity = '0';
+    arrowDown[1].style.transition = 'opacity 1s';
 
     githubSite1.style.right = '-80px';
     githubSite1.style.opacity = '0';

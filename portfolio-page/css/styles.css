@@ -7,6 +7,8 @@ body
     background-color: black;
 
     position: relative;
+
+    overflow: hidden;
 }
 
 
@@ -105,9 +107,179 @@ main #header #scrollDown>i
 
 
 
+
+
 /* -------- PORTFOLIO -------- */
+
+main .descriptionPage
+{
+    position: relative;
+}
 
 main .container-portfolio
 {
-    background-color: white;
+    background-color: black;
+}
+
+
+
+
+/* -------- SITE 1  */
+
+main .descriptionPage .titreH2>#arrowUp
+{
+    display: flex;
+    justify-content: center;
+
+    opacity: 0;
+
+    cursor: pointer;
+}
+
+main .descriptionPage .titreH2>#arrowUp>i
+{
+    font-size: 40px;
+
+    margin-top: 10px;
+
+    animation: scrollUp 800ms ease-in-out 1500ms infinite alternate;
+}
+
+@keyframes scrollUp {
+    from {margin-top: 10px}
+    to {margin-top: 20px}
+}
+
+main .container-portfolio .site-1>.titreH2
+{
+    height: 100px;
+
+    color: white;
+
+    position: relative;
+}
+
+main .container-portfolio .site-1>.titreH2>#bgTitleH2
+{
+    height: 50px;
+    width: 0px;
+
+    background-color: black;
+
+    position: absolute;
+    bottom: -17px;
+}
+
+main .container-portfolio .site-1 .titreH2>#titleSite1
+{
+    font-size: 50px;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    text-shadow: #D548EB 3px 3px;
+
+    color: white;
+
+    opacity: 0;
+}
+
+main .container-portfolio .site-1 .img-site
+{
+    width: 700px;
+    height: 0;
+
+    overflow: auto;
+
+    scrollbar-color: #D548EB #342670;
+
+    margin-left: 200px;
+    margin-top: 50px;
+
+    opacity: 0;
+
+    border-bottom-left-radius: 20px;
+}
+
+main .container-portfolio .site-1 .img-site>#imgLoopStudio
+{
+    width: 100%;
+}
+
+main .container-portfolio .site-1 .img-site-responsive
+{
+    width: 350px;
+    height: 0;
+
+    overflow: auto;
+
+    position: absolute;
+    top: 200px;
+    left: 850px;
+
+    scrollbar-color: #D548EB #34267000;
+
+    opacity: 0;
+
+    border-bottom-left-radius: 20px;
+
+    z-index: 2;
+}
+
+main .container-portfolio .site-1 .img-site-responsive>#imgLoopStudioResponsive
+{
+    width: 100%;
+}
+
+main .container-portfolio .site-1 >#lienGithubSite1
+{
+    position: absolute;
+    bottom: 50px;
+    right: -80px;
+
+    font-size: 60px;
+
+    z-index: 1;
+
+    opacity: 0;
+
+    cursor: pointer;
+}
+
+main .container-portfolio .site-1 >#lienGithubSite1>a
+{
+    text-decoration: none;
+
+    color: black;
+}
+
+main .container-portfolio .site-1 >#lienGithubSite1>a>i
+{
+    background: white;
+
+    line-height: 40px;
+}
+
+
+
+
+
+
+/* -------- MEDIA QUERIES -------- */
+
+@media screen AND (max-width: 450px) {
+    
+    main > #header > h2 {
+        color: white;
+        font-size: 40px;
+    }
+
+    main > #header > p {
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        margin-top: 150px;
+        width: 370px;
+    }
 }

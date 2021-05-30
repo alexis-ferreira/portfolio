@@ -52,7 +52,10 @@ let windowHeight = window.innerHeight;
 
 let divWindow = document.getElementsByClassName('container-screen');
 divWindow = divWindow[0];
-console.log(divWindow);
+// console.log(divWindow);
+
+let alexisPicture = document.getElementById('containerImg');
+// console.log(alexisPicture);
 
 
 
@@ -69,6 +72,18 @@ document.addEventListener('DOMContentLoaded', function(){
     divMenu.style.opacity = '1';
 
     divWindow.style.height = windowHeight + 'px';
+
+    if (screen.width > 450){
+        alexisPicture.style.left = '-250px';
+        alexisPicture.style.opacity = '1';
+        alexisPicture.style.transition = 'left 1s, opacity 1s';
+        alexisPicture.style.transitionDelay = '1000ms';
+    } else {
+        alexisPicture.style.right = '-35px';
+        alexisPicture.style.opacity = '1';
+        alexisPicture.style.transition = 'right 1500ms, opacity 1s';
+        alexisPicture.style.transitionDelay = '1000ms';
+    }
 })
 
 btnMenu.addEventListener('mouseenter', function(){
@@ -267,4 +282,14 @@ function redirection(){
     
     divMenu.style.opacity = '0';
     divMenu.style.transition = "opacity 1000ms";
+
+    if (screen.width > 450 ){
+        alexisPicture.style.left = '-300px';
+        alexisPicture.style.opacity = '0';
+        alexisPicture.style.transition = 'left 1s, opacity 800ms';
+    } else {
+        alexisPicture.style.right = '-250px';
+        alexisPicture.style.opacity = '0';
+        alexisPicture.style.transition = 'right 1500ms, opacity 1s';
+    }
 }

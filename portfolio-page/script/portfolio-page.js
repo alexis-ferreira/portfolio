@@ -107,7 +107,16 @@ bgGithubSite1 = bgGithubSite1[0];
 // ------ RESPONSIVE 
 
 if (widthScreen <= 450){
+    document.body.style.overflow = 'auto'
+
+    for (let i = 0; i < siteArray.length; i++){
+        siteArray[i].style.display = 'none'
+    }
+
     arrowDown.addEventListener('click', function(){
+
+        site1Page.style.display = 'block';
+        siteArray[0].scrollIntoView({behavior: "smooth"})
     
         titleLoopStudio.style.left = '50px';
         titleLoopStudio.style.transition = 'left 500ms, opacity 1s';
@@ -303,10 +312,6 @@ if (widthScreen <= 450){
         }, 800);
     })
 }
-
-// DEPLACER A 905px left
-// settimeout sur le z index
-// REVENIR A 850px
 
 githubSite1.addEventListener('mouseenter', function(){
     bgGithubSite1.style.backgroundColor = '#D548EB';

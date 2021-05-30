@@ -418,4 +418,10 @@ main .container-portfolio .site-1>.arrowDown2>.fa-chevron-down
         cursor: pointer;
         width: 53px;
     }
+
+    main .container-portfolio .site-1 > .titreH2 {
+        height: 85px;
+        color: white;
+        position: relative;
+    }
 }

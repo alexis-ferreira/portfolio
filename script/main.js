@@ -74,10 +74,12 @@ document.addEventListener('DOMContentLoaded', function(){
     divWindow.style.height = windowHeight + 'px';
 
     if (screen.width > 450){
-        alexisPicture.style.left = '-250px';
-        alexisPicture.style.opacity = '1';
-        alexisPicture.style.transition = 'left 1s, opacity 1s';
-        alexisPicture.style.transitionDelay = '1000ms';
+        setInterval(() => {
+            alexisPicture.style.left = '-250px';
+            alexisPicture.style.opacity = '1';
+            alexisPicture.style.transition = 'left 1s, opacity 1s';
+            alexisPicture.style.transitionDelay = '1000ms';
+        }, 2000);
     } else {
         alexisPicture.style.right = '-35px';
         alexisPicture.style.opacity = '1';

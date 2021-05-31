@@ -65,25 +65,37 @@ let alexisPicture = document.getElementById('containerImg');
 // SCRIPT
 
 document.addEventListener('DOMContentLoaded', function(){
-    titlePage.style.opacity = "1";
-
-    paragraphDev.style.opacity = '1';
-
-    divMenu.style.opacity = '1';
 
     divWindow.style.height = windowHeight + 'px';
 
-    if (screen.width > 450){
-        setInterval(() => {
-            alexisPicture.style.left = '-250px';
+    if (screen.width < 450){
+        setTimeout(() => {
+            
+            titlePage.style.opacity = "1";
+
+            paragraphDev.style.opacity = '1';
+        
+            divMenu.style.opacity = '1';
+    
+            alexisPicture.style.right = '-35px';
             alexisPicture.style.opacity = '1';
-            alexisPicture.style.transition = 'left 1s, opacity 1s';
+            alexisPicture.style.transition = 'right 1500ms, opacity 1s';
             alexisPicture.style.transitionDelay = '1000ms';
-        }, 2000);
+
+        }, 1000);
+       
     } else {
-        alexisPicture.style.right = '-35px';
+        titlePage.style.opacity = "1";
+
+        paragraphDev.style.opacity = '1';
+    
+        divMenu.style.opacity = '1';
+    
+        divWindow.style.height = windowHeight + 'px';
+
+        alexisPicture.style.left = '-250px';
         alexisPicture.style.opacity = '1';
-        alexisPicture.style.transition = 'right 1500ms, opacity 1s';
+        alexisPicture.style.transition = 'left 1s, opacity 1s';
         alexisPicture.style.transitionDelay = '1000ms';
     }
 });

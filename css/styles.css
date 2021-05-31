@@ -251,6 +251,17 @@ main .container-screen #container-menu>#portfolio>a>p, main .container-screen #c
     z-index: 1;
 }
 
+main .container-screen .title > #containerImg > #blur
+{
+    height: 500px;
+    position: absolute;
+    width: 65px;
+    top: 0px;
+    left: 305px;
+    box-shadow: -20px 0px 50px black;
+    opacity: 1 !important;
+}
+
 
 
 

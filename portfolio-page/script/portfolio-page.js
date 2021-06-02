@@ -25,7 +25,7 @@ let arrowDown = document.getElementsByClassName('fa-chevron-down');
 // console.log(arrowDown);
 
 let btnArrowDown = document.getElementById('scrollDown');
-console.log(btnArrowDown);
+// console.log(btnArrowDown);
 
 let siteArray = document.getElementsByClassName('descriptionPage');
 // console.log(siteArray);
@@ -93,8 +93,8 @@ let imgSite1Responsive = document.getElementsByClassName('img-site-responsive');
 imgSite1Responsive = imgSite1Responsive[0];
 // console.log(imgSite1Responsive);
 
-let arrowUp = document.getElementById('arrowUp');
-// console.log(arrowUp);
+let arrowUp = document.getElementsByClassName('fa-chevron-up');
+console.log(arrowUp);
 
 let githubSite1 = document.getElementById('lienGithubSite1');
 // console.log(githubSite1);
@@ -178,9 +178,9 @@ if (widthScreen <= 450){
         imgSite1Responsive.style.transitionDelay = '1000ms';
         imgSite1Responsive.style.opacity = '1';
     
-        arrowUp.style.opacity = '1';
-        arrowUp.style.transition = 'opacity 1s';
-        arrowUp.style.transitionDelay = '1000ms';
+        arrowUp[0].style.opacity = '1';
+        arrowUp[0].style.transition = 'opacity 1s';
+        arrowUp[0].style.transitionDelay = '1000ms';
 
         arrowDown[1].style.opacity = '1';
         arrowDown[1].style.transition = 'opacity 1s';
@@ -212,7 +212,7 @@ if (widthScreen <= 450){
         imgSite1.style.transition = 'box-shadow 1s, z-index 1s';
     });
 
-    arrowUp.addEventListener('click', function(){
+    arrowUp[0].addEventListener('click', function(){
         setTimeout(function(){
             sectionHeader.scrollIntoView({behavior: "smooth"});
         }, 1100);
@@ -241,9 +241,9 @@ if (widthScreen <= 450){
         imgSite1Responsive.style.transition = 'height 1000ms, opacity 2s';
         imgSite1Responsive.style.opacity = '0';
     
-        arrowUp.style.opacity = '0';
-        arrowUp.style.transition = 'opacity 1s';
-        arrowUp.style.transitionDelay = '1000ms';
+        arrowUp[0].style.opacity = '0';
+        arrowUp[0].style.transition = 'opacity 1s';
+        arrowUp[0].style.transitionDelay = '1000ms';
 
         arrowDown[1].style.opacity = '0';
         arrowDown[1].style.transition = 'opacity 1s';
@@ -284,9 +284,9 @@ if (widthScreen <= 450){
         imgSite1Responsive.style.transitionDelay = '1000ms';
         imgSite1Responsive.style.opacity = '1';
     
-        arrowUp.style.opacity = '1';
-        arrowUp.style.transition = 'opacity 1s';
-        arrowUp.style.transitionDelay = '1000ms';
+        arrowUp[0].style.opacity = '1';
+        arrowUp[0].style.transition = 'opacity 1s';
+        arrowUp[0].style.transitionDelay = '1000ms';
 
         arrowDown[1].style.opacity = '1';
         arrowDown[1].style.transition = 'opacity 1s';
@@ -298,7 +298,7 @@ if (widthScreen <= 450){
         githubSite1.style.opacity = '1';
     });
     
-    arrowUp.addEventListener('click', function(){
+    arrowUp[0].addEventListener('click', function(){
         setTimeout(function(){
             sectionHeader.scrollIntoView({behavior: "smooth"});
         }, 1100);
@@ -323,8 +323,8 @@ if (widthScreen <= 450){
         imgSite1Responsive.style.transition = 'height 1000ms, opacity 2s';
         imgSite1Responsive.style.opacity = '0';
     
-        arrowUp.style.opacity = '0';
-        arrowUp.style.transition = 'opacity 1s';
+        arrowUp[0].style.opacity = '0';
+        arrowUp[0].style.transition = 'opacity 1s';
 
         arrowDown[1].style.opacity = '0';
         arrowDown[1].style.transition = 'opacity 1s';
@@ -421,8 +421,8 @@ arrowDown1.addEventListener('click', function(){
     imgSite1Responsive.style.transition = 'height 1000ms, opacity 2s';
     imgSite1Responsive.style.opacity = '0';
 
-    arrowUp.style.opacity = '0';
-    arrowUp.style.transition = 'opacity 1s';
+    arrowUp[0].style.opacity = '0';
+    arrowUp[0].style.transition = 'opacity 1s';
 
     arrowDown[1].style.opacity = '0';
     arrowDown[1].style.transition = 'opacity 1s';

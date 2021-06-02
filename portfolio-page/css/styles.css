@@ -1,3 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+
+
+
+
+
 /* -------- GENERAL -------- */
 
 body
@@ -13,6 +25,97 @@ body
 
 
 
+/* ------ ANIMATION ARROW */
+
+.arrowUp
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
+    position: absolute;
+    top: 10px;
+
+    width: 100%;
+
+    -webkit-animation: scrollUp 800ms ease-in-out 1500ms infinite alternate;
+}
+
+.arrowUp>i
+{
+    font-size: 30px;
+
+    color: white;
+
+    cursor: pointer;
+
+    opacity: 1;
+}
+
+@-webkit-keyframes scrollUp {
+    from {top: 10px}
+    to {top: 15px}
+}
+
+@keyframes scrollUp {
+    from {top: 10px}
+    to {top: 15px}
+}
+
+.arrowDown2
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
+    position: absolute;
+    bottom: 10px;
+
+    width: 100%;
+
+    -webkit-animation: nextSite 800ms ease-in-out 1500ms infinite alternate;
+}
+
+.fa-chevron-down
+{
+    font-size: 30px;
+
+    color: white;
+
+    cursor: pointer;
+
+    opacity: 1;
+}
+
+@-webkit-keyframes nextSite {
+    from {bottom: 10px}
+    to {bottom: 15px}
+}
+
+@keyframes nextSite {
+    from {bottom: 10px}
+    to {bottom: 15px}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* -------- MAIN -------- */
 
@@ -20,9 +123,18 @@ main>#header
 {
     position: relative;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 main #header>#arrowLeft
@@ -42,6 +154,10 @@ main #header #arrowLeft a .fa-arrow-left
 
     opacity: 0;
 
+    -webkit-transition: opacity 1s;
+
+    -o-transition: opacity 1s;
+
     transition: opacity 1s;
 }
 
@@ -57,6 +173,10 @@ main>#header>h2
     opacity: 0;
 
     text-transform: uppercase;
+
+    -webkit-transition: opacity 1s, margin-left 1s;
+
+    -o-transition: opacity 1s, margin-left 1s;
 
     transition: opacity 1s, margin-left 1s;
 }
@@ -76,6 +196,10 @@ main>#header>p
 
     opacity: 0;
 
+    -webkit-transition: opacity 1000ms, margin-right 1000ms;
+
+    -o-transition: opacity 1000ms, margin-right 1000ms;
+
     transition: opacity 1000ms, margin-right 1000ms;
 }
 
@@ -83,7 +207,9 @@ main>#header>p>a
 {
     color: white;
     
-    text-decoration: underline white;
+    -webkit-text-decoration: underline white;
+    
+            text-decoration: underline white;
 }
 
 main #header>i
@@ -95,19 +221,36 @@ main #header>i
     position: absolute;
     bottom: 60px;
 
-    animation: scrollDown 800ms ease-in-out 1500ms infinite alternate;
+    -webkit-animation: scrollDown 800ms ease-in-out 1500ms infinite alternate;
+
+            animation: scrollDown 800ms ease-in-out 1500ms infinite alternate;
 
     opacity: 0;
+
+    -webkit-transition: opacity 1s;
+
+    -o-transition: opacity 1s;
 
     transition: opacity 1s;
 
     cursor: pointer;
 }
 
+@-webkit-keyframes scrollDown {
+    from {bottom: 60px}
+    to {bottom: 50px}
+}
+
 @keyframes scrollDown {
     from {bottom: 60px}
     to {bottom: 50px}
 }
+
+
+
+
+
+
 
 
 
@@ -135,31 +278,16 @@ main .container-portfolio
 
 
 
+
+
+
+
+
+
+
 /* -------- SITE 1  */
 
-main .descriptionPage .titreH2>#arrowUp
-{
-    display: flex;
-    justify-content: center;
 
-    opacity: 0;
-
-    cursor: pointer;
-}
-
-main .descriptionPage .titreH2>#arrowUp>i
-{
-    font-size: 30px;
-
-    margin-top: 10px;
-
-    animation: scrollUp 800ms ease-in-out 1500ms infinite alternate;
-}
-
-@keyframes scrollUp {
-    from {margin-top: 10px}
-    to {margin-top: 15px}
-}
 
 main .container-portfolio .site-1>.titreH2
 {
@@ -278,33 +406,104 @@ main .container-portfolio .site-1 >#lienGithubSite1>a>i
     line-height: 40px;
 }
 
-main .container-portfolio .site-1>.arrowDown2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------- SITE 2 ------------------- */
+
+main .container-portfolio .site-2
 {
     display: flex;
     justify-content: center;
+    align-items: center;
 
-    position: absolute;
-    bottom: 10px;
-
-    width: 100%;
-
-    animation: nextSite 800ms ease-in-out 1500ms infinite alternate;
+    position: relative;
+    
+    background: linear-gradient( 300deg , hsl(0, 80%, 86%), hsl(0deg 0% 90%))
 }
 
-main .container-portfolio .site-1>.arrowDown2>.fa-chevron-down
+main .container-portfolio .site-2>.containerImgSite2
 {
-    font-size: 30px;
+    width: 900px;
+    height: 590px;
+
+    position: relative;
+}
+
+main .container-portfolio .site-2>#containerTitleSite2
+{
+    position: absolute;
+    left: 0;
+    top: 50px;
+}
+
+main .container-portfolio .site-2>#containerTitleSite2>#bgTitleSite2
+{
+    
+}
+
+main .container-portfolio .site-2>#containerTitleSite2>#titleSite2
+{
+    font-size: 50px;
+
+    text-shadow: #CE9797 3px 3px;
 
     color: white;
 
-    cursor: pointer;
+    text-transform: uppercase;
 
-    opacity: 0;
+    opacity: 1;
 }
 
-@keyframes nextSite {
-    from {bottom: 10px}
-    to {bottom: 15px}
+main .container-portfolio .site-2>.containerImgSite2>#imgSite2Picture
+{
+    width: 50%;
+    height: 100%;
+
+    background-image: url(/img/site-2-photo.jpg);
+    background-size: cover;
+
+    position: absolute;
+    right: 0;
+}
+
+main .container-portfolio .site-2>.containerImgSite2>#imgSite2Top
+{
+    width: 50%;
+    height: 50%;
+
+    background-image: url(/img/site-2-top.jpg);
+    background-size: 650px;
+    background-position: -70px -25px;
+
+    position: absolute;
+}
+
+main .container-portfolio .site-2>.containerImgSite2>#imgSite2Bottom
+{
+    width: 50%;
+    height: 50%;
+
+    background-image: url(/img/site-2-bottom.jpg);
+    background-size: 700px;
+    background-position: -80px 0px;
+
+    position: absolute;
+    bottom: 0;
+
 }
 
 
@@ -319,9 +518,6 @@ main .container-portfolio .site-1>.arrowDown2>.fa-chevron-down
 
 
 
-
-
-/* -------- SITE 2 */
 
 
 
@@ -335,9 +531,18 @@ main .container-portfolio .site-1>.arrowDown2>.fa-chevron-down
     {
         position: relative;
 
+        display: -webkit-box;
+
+        display: -ms-flexbox;
+
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     
     main > #header > h2 {
@@ -360,6 +565,17 @@ main .container-portfolio .site-1>.arrowDown2>.fa-chevron-down
         position: absolute;
         left: 0px;
     }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -405,7 +621,8 @@ main .container-portfolio .site-1>.arrowDown2>.fa-chevron-down
     main .descriptionPage .titreH2 > #arrowUp > i {
         font-size: 30px;
         margin-top: 10px;
-        animation: scrollUp 800ms ease-in-out 1500ms infinite alternate;
+        -webkit-animation: scrollUp 800ms ease-in-out 1500ms infinite alternate;
+                animation: scrollUp 800ms ease-in-out 1500ms infinite alternate;
     }
 
     main .container-portfolio .site-1 > #lienGithubSite1 {

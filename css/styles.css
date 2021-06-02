@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* ------- GENERAL -------- */
 
 body
@@ -23,8 +30,14 @@ main .container-screen>.title>h1
 
     opacity: 0;
 
+    -webkit-transition: opacity 2s;
+
+    -o-transition: opacity 2s;
+
     transition: opacity 2s;
-    transition-delay: 500ms;
+    -webkit-transition-delay: 500ms;
+         -o-transition-delay: 500ms;
+            transition-delay: 500ms;
 
     text-align: center;
 
@@ -43,8 +56,14 @@ main .container-screen>.title>p
 
     opacity: 0;
 
+    -webkit-transition: opacity 2s;
+
+    -o-transition: opacity 2s;
+
     transition: opacity 2s;
-    transition-delay: 1000ms;
+    -webkit-transition-delay: 1000ms;
+         -o-transition-delay: 1000ms;
+            transition-delay: 1000ms;
 
     position: relative;
 
@@ -55,9 +74,18 @@ main .container-screen
 {
     margin: 0 auto;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 main .container-screen .title>#containerImg
@@ -91,7 +119,8 @@ main .container-screen .title > #containerImg > #blur
     width: 65px;
     top: 0px;
     left: 300px;
-    box-shadow: -20px 0px 50px black;
+    -webkit-box-shadow: -20px 0px 50px black;
+            box-shadow: -20px 0px 50px black;
     opacity: 1 !important;
 }
 
@@ -111,23 +140,43 @@ main .container-screen #container-menu
 
     padding-top: 150px;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     position: relative;
 
     opacity: 0;
 
+    -webkit-transition: opacity 2s;
+
+    -o-transition: opacity 2s;
+
     transition: opacity 2s;
-    transition-delay: 1500ms;
+    -webkit-transition-delay: 1500ms;
+         -o-transition-delay: 1500ms;
+            transition-delay: 1500ms;
 }
 
 main .container-screen #container-menu #btn-menu
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     border-radius: 50%;
 
@@ -162,9 +211,17 @@ main .container-screen #container-menu>#portfolio, main .container-screen #conta
     border: 1px solid white;
     border-radius: 50%;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     background-color: black;
 }
@@ -172,6 +229,10 @@ main .container-screen #container-menu>#portfolio, main .container-screen #conta
 main .container-screen #container-menu>#portfolio
 {
     top: 154px;
+
+    -webkit-transition: top 500ms, width 300ms, height 300ms;
+
+    -o-transition: top 500ms, width 300ms, height 300ms;
 
     transition: top 500ms, width 300ms, height 300ms;
 
@@ -189,8 +250,18 @@ main .container-screen #container-menu>#cv
 {
     left: 154px;
 
+    -webkit-transition: left 500ms, width 300ms, height 300ms, -webkit-transform 500ms;
+
+    transition: left 500ms, width 300ms, height 300ms, -webkit-transform 500ms;
+
+    -o-transition: left 500ms, transform 500ms, width 300ms, height 300ms;
+
     transition: left 500ms, transform 500ms, width 300ms, height 300ms;
-    transition-delay: 300ms;
+
+    transition: left 500ms, transform 500ms, width 300ms, height 300ms, -webkit-transform 500ms;
+    -webkit-transition-delay: 300ms;
+         -o-transition-delay: 300ms;
+            transition-delay: 300ms;
 
     cursor: pointer;
 }
@@ -199,8 +270,18 @@ main .container-screen #container-menu>#contact
 {
     right: 154px;
 
+    -webkit-transition: right 500ms, width 300ms, height 300ms, -webkit-transform 500ms;
+
+    transition: right 500ms, width 300ms, height 300ms, -webkit-transform 500ms;
+
+    -o-transition: right 500ms, transform 500ms, width 300ms, height 300ms;
+
     transition: right 500ms, transform 500ms, width 300ms, height 300ms;
-    transition-delay: 300ms;
+
+    transition: right 500ms, transform 500ms, width 300ms, height 300ms, -webkit-transform 500ms;
+    -webkit-transition-delay: 300ms;
+         -o-transition-delay: 300ms;
+            transition-delay: 300ms;
 
     cursor: pointer;
 }
@@ -215,9 +296,17 @@ main .container-screen #container-menu>#portfolio>a>p, main .container-screen #c
     height: 75px;
     width: 75px;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 #borderPortfolio
@@ -229,7 +318,11 @@ main .container-screen #container-menu>#portfolio>a>p, main .container-screen #c
 
     opacity: 0%;
 
-    transition-delay: 300ms;
+    -webkit-transition-delay: 300ms;
+
+         -o-transition-delay: 300ms;
+
+            transition-delay: 300ms;
 
     z-index: 1;
 
@@ -246,7 +339,11 @@ main .container-screen #container-menu>#portfolio>a>p, main .container-screen #c
 
     opacity: 0%;
 
-    transition-delay: 300ms;
+    -webkit-transition-delay: 300ms;
+
+         -o-transition-delay: 300ms;
+
+            transition-delay: 300ms;
 
     z-index: 1;
 }
@@ -261,7 +358,11 @@ main .container-screen #container-menu>#portfolio>a>p, main .container-screen #c
 
     opacity: 0%;
 
-    transition-delay: 300ms;
+    -webkit-transition-delay: 300ms;
+
+         -o-transition-delay: 300ms;
+
+            transition-delay: 300ms;
 
     z-index: 1;
 }
@@ -290,12 +391,16 @@ main .container-screen #container-menu>#portfolio>a>p, main .container-screen #c
         position: absolute;
         right: -250px;
         left: auto;
-        user-select: none;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
     }
 
     main .container-screen .title > #containerImg > img
     {
-        user-select: none;
+        -webkit-user-select: none;
+                user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
     }
@@ -307,7 +412,8 @@ main .container-screen #container-menu>#portfolio>a>p, main .container-screen #c
         width: 30px;
         top: -40px;
         left: -30px;
-        box-shadow: 36px 0px 50px black;
+        -webkit-box-shadow: 36px 0px 50px black;
+                box-shadow: 36px 0px 50px black;
         opacity: 1 !important;
     }
 }

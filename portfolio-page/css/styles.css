@@ -8,7 +8,7 @@
 
 
 
-
+              
 
 /* -------- GENERAL -------- */
 
@@ -58,13 +58,13 @@ body
 }
 
 @-webkit-keyframes scrollUp {
-    from {top: 10px}
-    to {top: 15px}
+    from {top: 20px}
+    to {top: 25px}
 }
 
 @keyframes scrollUp {
-    from {top: 10px}
-    to {top: 15px}
+    from {top: 20px}
+    to {top: 25px}
 }
 
 .arrowDown2
@@ -98,13 +98,13 @@ body
 }
 
 @-webkit-keyframes nextSite {
-    from {bottom: 10px}
-    to {bottom: 15px}
+    from {bottom: 20px}
+    to {bottom: 25px}
 }
 
 @keyframes nextSite {
-    from {bottom: 10px}
-    to {bottom: 15px}
+    from {bottom: 20px}
+    to {bottom: 25px}
 }
 
 
@@ -441,6 +441,8 @@ main .container-portfolio .site-2
     transition: opacity 800ms;
 
     overflow: hidden;
+
+    opacity: 0;
 }
 
 main .container-portfolio .site-2>.containerImgSite2
@@ -504,7 +506,7 @@ main .container-portfolio .site-2>.containerImgSite2>#imgSite2Picture
     width: 50%;
     height: 100%;
 
-    background-image: url(/img/site-2-photo.jpg);
+    background-image: url(../img/site-2-photo.jpg);
     background-size: cover;
 
     position: absolute;
@@ -518,7 +520,7 @@ main .container-portfolio .site-2>.containerImgSite2>#imgSite2Top
     width: 50%;
     height: 50%;
 
-    background-image: url(/img/site-2-top.jpg);
+    background-image: url(../img/site-2-top.jpg);
     background-size: 650px;
     background-position: -70px -25px;
 
@@ -535,7 +537,7 @@ main .container-portfolio .site-2>.containerImgSite2>#imgSite2Bottom
     width: 50%;
     height: 50%;
 
-    background-image: url(/img/site-2-bottom.jpg);
+    background-image: url(../img/site-2-bottom.jpg);
     background-size: 700px;
     background-position: -80px 0px;
 
@@ -584,10 +586,16 @@ main .container-portfolio .site-2>#btnResponsiveSite2
 
     background-color: white;
 
-    border: 1px solid black;
+    border: none;
     border-radius: 10px;
 
     text-transform: uppercase;
+
+    cursor: pointer;
+
+    opacity: 0;
+
+    transition: opacity 1000ms;
 }
 
 

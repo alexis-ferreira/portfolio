@@ -12,7 +12,7 @@ let widthScreen = (window.innerWidth);
 // console.log(widthScreen);
 
 let heightScreen = (window.innerHeight);
-// console.log(heightScreen);
+console.log(heightScreen);
 
 let sectionHeader = document.getElementById('header');
 // console.log(sectionHeader);
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 
-// --------------- ANIMATION SITE 2 -------------
+// --------------- ANIMATION SITE 1 -------------
 
 let titleLoopStudio = document.getElementById('titleSite1');
 // console.log(titleLoopStudio);
@@ -99,7 +99,7 @@ imgSite1Responsive = imgSite1Responsive[0];
 // console.log(imgSite1Responsive);
 
 let arrowUp = document.getElementsByClassName('fa-chevron-up');
-console.log(arrowUp);
+// console.log(arrowUp);
 
 let githubSite1 = document.getElementById('lienGithubSite1');
 // console.log(githubSite1);
@@ -231,6 +231,8 @@ arrowDown[1].addEventListener('click', function(){
     if (screen.width > 450){
 
         setTimeout(() => {
+            divSite2.style.opacity = '1';
+            divSite2.style.transition = 'opacity 2000ms'
             
             imgSite2Picture.style.right = '0px';
 
@@ -238,6 +240,8 @@ arrowDown[1].addEventListener('click', function(){
 
             imgSite2Bottom.style.bottom = '0px'
 
+            btnResponsiveSite2.style.opacity = '1'
+            btnResponsiveSite2.style.transition = 'opacity 1000ms'
         }, 2000);
     }
 })
@@ -302,13 +306,30 @@ btnResponsiveSite2.addEventListener('click', function(){
         divImageSite2Responsive.style.opacity = '0';
         divImageSite2Responsive.style.transition = 'opacity 500ms';
     }
+});
 
-    
+// REDIRECTION
+
+arrowUp[1].addEventListener('click', function(){
+
+            setTimeout(() => {
+                siteArray[0].scrollIntoView({behavior: "smooth"})
+            }, 1000);
+
+            divSite2.style.opacity = '0';
+            divSite2.style.transition = 'opacity 2000ms'
+            
+            imgSite2Picture.style.right = '-725px';
+
+            imgSite2Top.style.top = '-420px';
+
+            imgSite2Bottom.style.bottom = '-425px'
+
+            btnResponsiveSite2.style.opacity = '0'
+            btnResponsiveSite2.style.transition = 'opacity 1000ms'
+
+
 })
-    
-
-
-
 
 
 

@@ -439,6 +439,8 @@ main .container-portfolio .site-2
     background: linear-gradient( 300deg , hsl(0, 80%, 86%), hsl(0deg 0% 90%));
 
     transition: opacity 800ms;
+
+    overflow: hidden;
 }
 
 main .container-portfolio .site-2>.containerImgSite2
@@ -506,7 +508,9 @@ main .container-portfolio .site-2>.containerImgSite2>#imgSite2Picture
     background-size: cover;
 
     position: absolute;
-    right: 0;
+    right: -725px;
+
+    transition: right 1000ms;
 }
 
 main .container-portfolio .site-2>.containerImgSite2>#imgSite2Top
@@ -519,6 +523,11 @@ main .container-portfolio .site-2>.containerImgSite2>#imgSite2Top
     background-position: -70px -25px;
 
     position: absolute;
+    top: -420px;
+    left: 0;
+
+    transition: top 1000ms;
+    transition-delay: 1000ms;
 }
 
 main .container-portfolio .site-2>.containerImgSite2>#imgSite2Bottom
@@ -531,17 +540,54 @@ main .container-portfolio .site-2>.containerImgSite2>#imgSite2Bottom
     background-position: -80px 0px;
 
     position: absolute;
-    bottom: 0;
+    bottom: -425px;
+    left: 0;
 
+    transition: bottom 1000ms;
+    transition-delay: 500ms;
 }
 
-main .container-portfolio .site-2>.containerImgSite2>#imgSite2Responsive
+main .container-portfolio .site-2>.containerImgSite2>.imgResponsiveSite2
+{
+    overflow: auto;
+
+    height: 600px;
+    width: 355px;
+
+    margin: 0 auto;
+
+    opacity: 0;
+}
+
+main .container-portfolio .site-2>.containerImgSite2>.imgResponsiveSite2>#imgSite2Responsive
 {
     display: block;
 
-    width: 200px;
+    width: 340px;
 
-    margin: 75px auto;
+    opacity: 0;
+
+    display: none;
+
+    transition: opacity 1000ms;
+}
+
+main .container-portfolio .site-2>#btnResponsiveSite2
+{
+    position: absolute;
+    bottom: 60px;
+
+    width: 150px;
+    height: 35px;
+
+    font-size: 15px;
+
+    background-color: white;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    text-transform: uppercase;
 }
 
 

@@ -436,7 +436,9 @@ main .container-portfolio .site-2
 
     position: relative;
     
-    background: linear-gradient( 300deg , hsl(0, 80%, 86%), hsl(0deg 0% 90%))
+    background: linear-gradient( 300deg , hsl(0, 80%, 86%), hsl(0deg 0% 90%));
+
+    transition: opacity 800ms;
 }
 
 main .container-portfolio .site-2>.containerImgSite2
@@ -457,13 +459,15 @@ main .container-portfolio .site-2>#containerTitleSite2
 main .container-portfolio .site-2>#containerTitleSite2>#bgTitleSite2
 {
     height: 50px;
-    width: 200px;
+    width: 0px;
 
     position: absolute;
     left: 0;
     top: 20px;
 
     background-color: white;
+
+    transition: width 1000ms;
 }
 
 main .container-portfolio .site-2>#containerTitleSite2>#titleSite2
@@ -483,6 +487,14 @@ main .container-portfolio .site-2>#containerTitleSite2>#titleSite2
     z-index: 2;
 
     margin-left: 15px;
+
+    width: 400px;
+
+    position: absolute;
+    left: -430px;
+
+    transition: left 1500ms;
+    transition-delay: 300ms;
 }
 
 main .container-portfolio .site-2>.containerImgSite2>#imgSite2Picture

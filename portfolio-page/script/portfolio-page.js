@@ -182,6 +182,44 @@ arrowDown1.addEventListener('click', function(){
 // -------------- ANIMATION SITE 2 ------------------
 
 
+// VARIABLES
+
+let bgTitleSite2 = document.getElementById('bgTitleSite2');
+// console.log(bgTitleSite2);
+
+let titleSite2 = document.getElementById('titleSite2');
+// console.log(titleSite2);
+
+let divSite2 = document.getElementsByClassName('site-2');
+divSite2 = divSite2[0];
+console.log(divSite2);
+
+
+
+// SCRIPT
+
+
+// REDIRECTION
+
+
+
+
+// TITLE
+
+arrowDown[1].addEventListener('click', function(){
+
+    if (screen.width > 450){
+
+        setTimeout(() => {
+            
+            bgTitleSite2.style.width = '200px';
+
+            titleSite2.style.left = '0px'
+        }, 1500);
+    }
+});
+
+
 
 
 

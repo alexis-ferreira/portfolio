@@ -33,7 +33,12 @@ let siteArray = document.getElementsByClassName('descriptionPage');
 
 
 
+
+
+
+
 // SCRIPT
+
 
 
 document.addEventListener('DOMContentLoaded', function(){
@@ -73,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 
-// LOOP STUDIO ANIMATION
+// --------------- ANIMATION SITE 2 -------------
 
 let titleLoopStudio = document.getElementById('titleSite1');
 // console.log(titleLoopStudio);
@@ -103,6 +108,98 @@ let bgGithubSite1 = document.getElementsByClassName('fa-github-square');
 bgGithubSite1 = bgGithubSite1[0];
 // console.log(bgGithubSite1);
 
+
+
+
+
+
+
+
+
+
+
+
+// -------- REDIRECTION AU SITE 2
+
+let arrowDown1 = arrowDown[1];
+console.log(arrowDown1);
+// console.log(arrowDown);
+
+// console.log(siteArray[1]);
+
+arrowDown1.addEventListener('click', function(){
+    setTimeout(function(){
+        siteArray[1].scrollIntoView({behavior: "smooth"});
+    }, 1100);
+
+    titleLoopStudio.style.left = '0';
+    titleLoopStudio.style.transition = 'left 500ms, opacity 1s';
+    titleLoopStudio.style.opacity = '0';
+
+    bgTitleLoopStudio.style.width = '0';
+    bgTitleLoopStudio.style.transition = 'width 1000ms';
+    bgTitleLoopStudio.style.transitionDelay = '300ms';
+
+    site1Page.style.backgroundColor = 'black';
+    site1Page.style.transition = 'background-color 200ms';
+    site1Page.style.transitionDelay = '500ms';
+
+    imgSite1.style.height = '0';
+    imgSite1.style.transition = 'height 1000ms, opacity 2s';
+    imgSite1.style.opacity = '0';
+
+    imgSite1Responsive.style.height = '0';
+    imgSite1Responsive.style.transition = 'height 1000ms, opacity 2s';
+    imgSite1Responsive.style.opacity = '0';
+
+    arrowUp[0].style.opacity = '0';
+    arrowUp[0].style.transition = 'opacity 1s';
+
+    arrowDown[1].style.opacity = '0';
+    arrowDown[1].style.transition = 'opacity 1s';
+
+    githubSite1.style.right = '-80px';
+    githubSite1.style.opacity = '0';
+    githubSite1.style.transition = 'right 1s, opacity 1000ms';
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// -------------- ANIMATION SITE 2 ------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ------ RESPONSIVE 
 
 if (widthScreen <= 450){
@@ -115,6 +212,10 @@ if (widthScreen <= 450){
     // if (arrowUp.style.opacity == '0'){   REMPLACER PAR UNE VARIABLE BOOLEENNE
     //     document.body.style.overflow = 'hidden';
     // }
+
+
+    // --------- PAGE D'ACCUEIL
+
 
     document.addEventListener('DOMContentLoaded', function(){
         titlePortfolio.style.opacity = '1';
@@ -381,53 +482,4 @@ githubSite1.addEventListener('mouseenter', function(){
 githubSite1.addEventListener('mouseleave', function(){
     bgGithubSite1.style.backgroundColor = 'white';
     bgGithubSite1.style.transition = 'background-color 300ms';
-});
-
-
-
-
-
-
-// -------- REDIRECTION AU SITE 2
-
-let arrowDown1 = arrowDown[1];
-console.log(arrowDown1);
-// console.log(arrowDown);
-
-// console.log(siteArray[1]);
-
-arrowDown1.addEventListener('click', function(){
-    setTimeout(function(){
-        siteArray[1].scrollIntoView({behavior: "smooth"});
-    }, 1100);
-
-    titleLoopStudio.style.left = '0';
-    titleLoopStudio.style.transition = 'left 500ms, opacity 1s';
-    titleLoopStudio.style.opacity = '0';
-
-    bgTitleLoopStudio.style.width = '0';
-    bgTitleLoopStudio.style.transition = 'width 1000ms';
-    bgTitleLoopStudio.style.transitionDelay = '300ms';
-
-    site1Page.style.backgroundColor = 'black';
-    site1Page.style.transition = 'background-color 200ms';
-    site1Page.style.transitionDelay = '500ms';
-
-    imgSite1.style.height = '0';
-    imgSite1.style.transition = 'height 1000ms, opacity 2s';
-    imgSite1.style.opacity = '0';
-
-    imgSite1Responsive.style.height = '0';
-    imgSite1Responsive.style.transition = 'height 1000ms, opacity 2s';
-    imgSite1Responsive.style.opacity = '0';
-
-    arrowUp[0].style.opacity = '0';
-    arrowUp[0].style.transition = 'opacity 1s';
-
-    arrowDown[1].style.opacity = '0';
-    arrowDown[1].style.transition = 'opacity 1s';
-
-    githubSite1.style.right = '-80px';
-    githubSite1.style.opacity = '0';
-    githubSite1.style.transition = 'right 1s, opacity 1000ms';
 });

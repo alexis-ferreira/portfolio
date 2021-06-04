@@ -311,9 +311,9 @@ function redirection(){
     }
 }
 
-linkContact.addEventListener('click', redirection);
+linkContact.addEventListener('click', redirectionContact);
 
-function redirection(){
+function redirectionContact(){
     setTimeout(function(){
         window.location.href = "./contact.html";
     }, 1100);

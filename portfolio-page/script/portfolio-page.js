@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function(){
     
     if (widthScreen <= 450){
     description.style.margin = '150px auto 0 auto';
-    } else{
+    } else {
     description.style.marginRight = '-700px';
     }
 
@@ -105,7 +105,7 @@ let githubSite1 = document.getElementById('lienGithubSite1');
 // console.log(githubSite1);
 
 let bgGithubSite = document.getElementsByClassName('fa-github-square');
-console.log(bgGithubSite);
+// console.log(bgGithubSite);
 
 
 if (widthScreen <= 450){
@@ -402,7 +402,7 @@ githubSite1.addEventListener('mouseleave', function(){
 // -------- REDIRECTION AU SITE 2
 
 let arrowDown1 = arrowDown[1];
-console.log(arrowDown1);
+// console.log(arrowDown1);
 // console.log(arrowDown);
 
 // console.log(siteArray[1]);
@@ -520,6 +520,27 @@ arrowDown[1].addEventListener('click', function(){
             imgSite2Picture.style.right = '0px';
 
             imgSite2Top.style.top = '0px';
+
+            imgSite2Bottom.style.bottom = '0px';
+
+            btnResponsiveSite2.style.opacity = '1';
+            btnResponsiveSite2.style.transition = 'opacity 1000ms';
+            btnResponsiveSite2.style.transitionDelay = '3000ms';
+
+            btnGithubSite2.style.left = '50px';
+            btnGithubSite2.style.transition = 'left 1s, opacity 10ms';
+            btnGithubSite2.style.transitionDelay = '2000ms';
+            btnGithubSite2.style.opacity = '1';
+        }, 1500);
+    } else {
+        setTimeout(() => {
+            divSite2.style.opacity = '1';
+            divSite2.style.transition = 'opacity 2000ms'
+            
+            imgSite2Picture.style.right = '0px';
+
+            imgSite2Top.style.top = '0px';
+            imgSite2Top.style.transition = 'top 1000ms'
 
             imgSite2Bottom.style.bottom = '0px';
 
@@ -676,7 +697,14 @@ arrowUp[1].addEventListener('click', function(){
                 
                 imgSite2Picture.style.right = '-725px';
 
-                imgSite2Top.style.top = '-420px';
+                if (screen.width > 450){
+                    imgSite2Top.style.top = '-420px';
+                    imgSite2Top.style.transition = 'top 1000ms';
+                } else {
+                    imgSite2Top.style.top = '-600px';
+                    imgSite2Top.style.transition = 'top 2000ms';
+                }
+                
 
                 imgSite2Bottom.style.bottom = '-425px';
 
@@ -699,7 +727,13 @@ arrowDown[2].addEventListener('click', function(){
         
         imgSite2Picture.style.right = '-725px';
 
-        imgSite2Top.style.top = '-420px';
+        if (screen.width > 450){
+            imgSite2Top.style.top = '-420px';
+            imgSite2Top.style.transition = 'top 1000ms';
+        } else {
+            imgSite2Top.style.top = '-600px';
+            imgSite2Top.style.transition = 'top 2000ms';
+        }
 
         imgSite2Bottom.style.bottom = '-425px';
 

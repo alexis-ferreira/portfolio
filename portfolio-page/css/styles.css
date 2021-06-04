@@ -20,7 +20,7 @@ body
 
     position: relative;
 
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 
@@ -666,6 +666,8 @@ main .container-portfolio .site-3>p
     color: white;
 
     font-size: 50px;
+
+    text-align: center;
 }
 
 main .container-portfolio .site-3>p>span
@@ -773,6 +775,7 @@ main .container-portfolio .site-3>div:last-child>a>i
         font-size: 40px;
         width: 222px;
         margin-left: -700px;
+        text-align: center;
     }
 
     main > #header > p {
@@ -863,5 +866,53 @@ main .container-portfolio .site-3>div:last-child>a>i
         height: 85px;
         color: white;
         position: relative;
+    }
+
+
+
+
+
+
+
+
+
+    /* ------- SITE 2 */
+
+    main .container-portfolio .site-2 > .containerImgSite2 {
+        width: 350px;
+        height: 300px;
+        position: relative;
+    }
+
+    main .container-portfolio .site-2 > .containerImgSite2 > #imgSite2Top {
+        width: 50%;
+        height: 100%;
+        background-image: url(../img/responsive-img.jpg);
+        background-size: 330px;
+        background-position: -58px 0px;
+        position: absolute;
+        top: -420px;
+        left: 0;
+        transition: top 1000ms;
+            transition-delay: 0s;
+        transition-delay: 1000ms;
+    }
+
+    main .container-portfolio .site-2 > .containerImgSite2 > #imgSite2Bottom {
+        display: none;
+    }
+
+    main .container-portfolio .site-2 > .containerImgSite2 > .imgResponsiveSite2 {
+        overflow: auto;
+        height: 500px;
+        width: 340px;
+        margin: 0 auto;
+        opacity: 0;
+        position: absolute;
+        top: -100px;
+    }
+
+    main .container-portfolio .site-2 > #btnResponsiveSite2 {
+        top: 65px;
     }
 }

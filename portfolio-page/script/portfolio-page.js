@@ -104,252 +104,9 @@ let arrowUp = document.getElementsByClassName('fa-chevron-up');
 let githubSite1 = document.getElementById('lienGithubSite1');
 // console.log(githubSite1);
 
-let bgGithubSite1 = document.getElementsByClassName('fa-github-square');
-bgGithubSite1 = bgGithubSite1[0];
-// console.log(bgGithubSite1);
+let bgGithubSite = document.getElementsByClassName('fa-github-square');
+console.log(bgGithubSite);
 
-
-
-
-
-
-
-
-
-
-
-
-// -------- REDIRECTION AU SITE 2
-
-let arrowDown1 = arrowDown[1];
-console.log(arrowDown1);
-// console.log(arrowDown);
-
-// console.log(siteArray[1]);
-
-arrowDown1.addEventListener('click', function(){
-    setTimeout(function(){
-        siteArray[1].scrollIntoView({behavior: "smooth"});
-    }, 1100);
-
-    titleLoopStudio.style.left = '0';
-    titleLoopStudio.style.transition = 'left 500ms, opacity 1s';
-    titleLoopStudio.style.opacity = '0';
-
-    bgTitleLoopStudio.style.width = '0';
-    bgTitleLoopStudio.style.transition = 'width 1000ms';
-    bgTitleLoopStudio.style.transitionDelay = '300ms';
-
-    site1Page.style.backgroundColor = 'black';
-    site1Page.style.transition = 'background-color 200ms';
-    site1Page.style.transitionDelay = '500ms';
-
-    imgSite1.style.height = '0';
-    imgSite1.style.transition = 'height 1000ms, opacity 2s';
-    imgSite1.style.opacity = '0';
-
-    imgSite1Responsive.style.height = '0';
-    imgSite1Responsive.style.transition = 'height 1000ms, opacity 2s';
-    imgSite1Responsive.style.opacity = '0';
-
-    arrowUp[0].style.opacity = '0';
-    arrowUp[0].style.transition = 'opacity 1s';
-
-    arrowDown[1].style.opacity = '0';
-    arrowDown[1].style.transition = 'opacity 1s';
-
-    githubSite1.style.right = '-80px';
-    githubSite1.style.opacity = '0';
-    githubSite1.style.transition = 'right 1s, opacity 1000ms';
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// -------------- ANIMATION SITE 2 ------------------
-
-
-// VARIABLES
-
-let bgTitleSite2 = document.getElementById('bgTitleSite2');
-// console.log(bgTitleSite2);
-
-let titleSite2 = document.getElementById('titleSite2');
-// console.log(titleSite2);
-
-let divSite2 = document.getElementsByClassName('site-2');
-divSite2 = divSite2[0];
-// console.log(divSite2);
-
-let containerImgSite2 = document.getElementsByClassName('containerImgSite2');
-containerImgSite2 = containerImgSite2[0];
-// console.log(containerImgSite2);
-
-let imgSite2Responsive = document.getElementById('imgSite2Responsive');
-// console.log(imgSite2Responsive);
-
-let imgSite2Top = document.getElementById('imgSite2Top');
-// console.log(imgSite2Top);
-
-let imgSite2Bottom = document.getElementById('imgSite2Bottom');
-// console.log(imgSite2Bottom);
-
-let imgSite2Picture = document.getElementById('imgSite2Picture');
-// console.log(imgSite2Picture);
-
-let btnResponsiveSite2 = document.getElementById('btnResponsiveSite2');
-// console.log(btnResponsiveSite2);
-
-let divImageSite2Responsive = document.getElementsByClassName('imgResponsiveSite2');
-divImageSite2Responsive = divImageSite2Responsive[0];
-
-let isSite2ResponsiveDisplay = false;
-
-
-
-
-// SCRIPT
-
-
-// CHARGEMENT DE LA PAGE
-
-arrowDown[1].addEventListener('click', function(){
-
-    if (screen.width > 450){
-
-        setTimeout(() => {
-            divSite2.style.opacity = '1';
-            divSite2.style.transition = 'opacity 2000ms'
-            
-            imgSite2Picture.style.right = '0px';
-
-            imgSite2Top.style.top = '0px';
-
-            imgSite2Bottom.style.bottom = '0px';
-
-            btnResponsiveSite2.style.opacity = '1';
-            btnResponsiveSite2.style.transition = 'opacity 1000ms';
-            btnResponsiveSite2.style.transitionDelay = '3000ms';
-        }, 1500);
-    }
-})
-
-
-// TITLE
-
-arrowDown[1].addEventListener('click', function(){
-
-    if (screen.width > 450){
-
-        setTimeout(() => {
-
-            bgTitleSite2.style.width = '200px';
-
-            titleSite2.style.left = '0px'
-        }, 1500);
-    }
-});
-
-// IMAGE RESPONSIVE
-
-btnResponsiveSite2.addEventListener('click', function(){
-
-    if (isSite2ResponsiveDisplay == false){
-
-        isSite2ResponsiveDisplay = true;
-
-        imgSite2Picture.style.right = '-400px';
-
-        imgSite2Bottom.style.left = '-300px';
-        imgSite2Bottom.style.transition = 'left 1000ms';
-    
-        imgSite2Top.style.left = '-300px';
-        imgSite2Top.style.transition = 'left 1000ms';
-    
-        setTimeout(() => {
-    
-            imgSite2Responsive.style.display = 'block';
-            imgSite2Responsive.style.opacity = '1';
-    
-            divImageSite2Responsive.style.opacity = '1';
-            divImageSite2Responsive.style.transition = 'opacity 1000ms';
-        }, 500);
-    } else if (isSite2ResponsiveDisplay == true){
-        
-        isSite2ResponsiveDisplay = false;
-
-        imgSite2Picture.style.right = '0';
-
-        imgSite2Bottom.style.left = '0';
-        imgSite2Bottom.style.transition = 'left 1000ms';
-    
-        imgSite2Top.style.left = '0';
-        imgSite2Top.style.transition = 'left 1000ms';
-    
-        setTimeout(() => {
-            imgSite2Responsive.style.display = 'none';
-        }, 1000);
-        imgSite2Responsive.style.opacity = '0';
-    
-        divImageSite2Responsive.style.opacity = '0';
-        divImageSite2Responsive.style.transition = 'opacity 500ms';
-    }
-});
-
-// REDIRECTION
-
-arrowUp[1].addEventListener('click', function(){
-
-            setTimeout(() => {
-                siteArray[0].scrollIntoView({behavior: "smooth"})
-            }, 1000);
-
-            divSite2.style.opacity = '0';
-            divSite2.style.transition = 'opacity 2000ms'
-            
-            imgSite2Picture.style.right = '-725px';
-
-            imgSite2Top.style.top = '-420px';
-
-            imgSite2Bottom.style.bottom = '-425px'
-
-            btnResponsiveSite2.style.opacity = '0'
-            btnResponsiveSite2.style.transition = 'opacity 1000ms'
-
-
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ------ RESPONSIVE 
 
 if (widthScreen <= 450){
     // document.body.style.overflow = 'auto'
@@ -624,11 +381,325 @@ if (widthScreen <= 450){
 }
 
 githubSite1.addEventListener('mouseenter', function(){
-    bgGithubSite1.style.backgroundColor = '#D548EB';
-    bgGithubSite1.style.transition = 'background-color 300ms';
+    bgGithubSite[0].style.backgroundColor = '#D548EB';
+    bgGithubSite[0].style.transition = 'background-color 300ms';
 });
 
 githubSite1.addEventListener('mouseleave', function(){
-    bgGithubSite1.style.backgroundColor = 'white';
-    bgGithubSite1.style.transition = 'background-color 300ms';
+    bgGithubSite[0].style.backgroundColor = 'white';
+    bgGithubSite[0].style.transition = 'background-color 300ms';
 });
+
+
+
+
+
+
+
+
+
+
+// -------- REDIRECTION AU SITE 2
+
+let arrowDown1 = arrowDown[1];
+console.log(arrowDown1);
+// console.log(arrowDown);
+
+// console.log(siteArray[1]);
+
+arrowDown1.addEventListener('click', function(){
+    setTimeout(function(){
+        siteArray[1].scrollIntoView({behavior: "smooth"});
+    }, 1100);
+
+    titleLoopStudio.style.left = '0';
+    titleLoopStudio.style.transition = 'left 500ms, opacity 1s';
+    titleLoopStudio.style.opacity = '0';
+
+    bgTitleLoopStudio.style.width = '0';
+    bgTitleLoopStudio.style.transition = 'width 1000ms';
+    bgTitleLoopStudio.style.transitionDelay = '300ms';
+
+    site1Page.style.backgroundColor = 'black';
+    site1Page.style.transition = 'background-color 200ms';
+    site1Page.style.transitionDelay = '500ms';
+
+    imgSite1.style.height = '0';
+    imgSite1.style.transition = 'height 1000ms, opacity 2s';
+    imgSite1.style.opacity = '0';
+
+    imgSite1Responsive.style.height = '0';
+    imgSite1Responsive.style.transition = 'height 1000ms, opacity 2s';
+    imgSite1Responsive.style.opacity = '0';
+
+    arrowUp[0].style.opacity = '0';
+    arrowUp[0].style.transition = 'opacity 1s';
+
+    arrowDown[1].style.opacity = '0';
+    arrowDown[1].style.transition = 'opacity 1s';
+
+    githubSite1.style.right = '-80px';
+    githubSite1.style.opacity = '0';
+    githubSite1.style.transition = 'right 1s, opacity 1000ms';
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// -------------- ANIMATION SITE 2 ------------------
+
+
+// VARIABLES
+
+let bgTitleSite2 = document.getElementById('bgTitleSite2');
+// console.log(bgTitleSite2);
+
+let titleSite2 = document.getElementById('titleSite2');
+// console.log(titleSite2);
+
+let divSite2 = document.getElementsByClassName('site-2');
+divSite2 = divSite2[0];
+// console.log(divSite2);
+
+let containerImgSite2 = document.getElementsByClassName('containerImgSite2');
+containerImgSite2 = containerImgSite2[0];
+// console.log(containerImgSite2);
+
+let imgSite2Responsive = document.getElementById('imgSite2Responsive');
+// console.log(imgSite2Responsive);
+
+let imgSite2Top = document.getElementById('imgSite2Top');
+// console.log(imgSite2Top);
+
+let imgSite2Bottom = document.getElementById('imgSite2Bottom');
+// console.log(imgSite2Bottom);
+
+let imgSite2Picture = document.getElementById('imgSite2Picture');
+// console.log(imgSite2Picture);
+
+let btnResponsiveSite2 = document.getElementById('btnResponsiveSite2');
+// console.log(btnResponsiveSite2);
+
+let divImageSite2Responsive = document.getElementsByClassName('imgResponsiveSite2');
+divImageSite2Responsive = divImageSite2Responsive[0];
+
+let isSite2ResponsiveDisplay = false;
+
+let btnGithubSite2 = document.getElementById('lienGithubSite2');
+// console.log(btnGithubSite2);
+
+
+
+
+// SCRIPT
+
+
+// CHARGEMENT DE LA PAGE
+
+arrowDown[1].addEventListener('click', function(){
+
+    if (screen.width > 450){
+
+        setTimeout(() => {
+            divSite2.style.opacity = '1';
+            divSite2.style.transition = 'opacity 2000ms'
+            
+            imgSite2Picture.style.right = '0px';
+
+            imgSite2Top.style.top = '0px';
+
+            imgSite2Bottom.style.bottom = '0px';
+
+            btnResponsiveSite2.style.opacity = '1';
+            btnResponsiveSite2.style.transition = 'opacity 1000ms';
+            btnResponsiveSite2.style.transitionDelay = '3000ms';
+
+            btnGithubSite2.style.left = '50px';
+            btnGithubSite2.style.transition = 'left 1s, opacity 10ms';
+            btnGithubSite2.style.transitionDelay = '2000ms';
+            btnGithubSite2.style.opacity = '1';
+        }, 1500);
+    }
+})
+
+
+// TITLE
+
+arrowDown[1].addEventListener('click', function(){
+
+    if (screen.width > 450){
+
+        setTimeout(() => {
+
+            bgTitleSite2.style.width = '200px';
+
+            titleSite2.style.left = '0px'
+        }, 1500);
+    }
+});
+
+// IMAGE RESPONSIVE
+
+btnResponsiveSite2.addEventListener('click', function(){
+
+    if (isSite2ResponsiveDisplay == false){
+
+        isSite2ResponsiveDisplay = true;
+
+        imgSite2Picture.style.right = '-400px';
+
+        imgSite2Bottom.style.left = '-300px';
+        imgSite2Bottom.style.transition = 'left 1000ms';
+    
+        imgSite2Top.style.left = '-300px';
+        imgSite2Top.style.transition = 'left 1000ms';
+    
+        setTimeout(() => {
+    
+            imgSite2Responsive.style.display = 'block';
+            imgSite2Responsive.style.opacity = '1';
+    
+            divImageSite2Responsive.style.opacity = '1';
+            divImageSite2Responsive.style.transition = 'opacity 1000ms';
+        }, 500);
+    } else if (isSite2ResponsiveDisplay == true){
+        
+        isSite2ResponsiveDisplay = false;
+
+        imgSite2Picture.style.right = '0';
+
+        imgSite2Bottom.style.left = '0';
+        imgSite2Bottom.style.transition = 'left 1000ms';
+    
+        imgSite2Top.style.left = '0';
+        imgSite2Top.style.transition = 'left 1000ms';
+    
+        setTimeout(() => {
+            imgSite2Responsive.style.display = 'none';
+        }, 1000);
+        imgSite2Responsive.style.opacity = '0';
+    
+        divImageSite2Responsive.style.opacity = '0';
+        divImageSite2Responsive.style.transition = 'opacity 500ms';
+    }
+});
+
+btnResponsiveSite2.addEventListener('mouseenter', function(){
+    btnResponsiveSite2.style.letterSpacing = '0';
+    btnResponsiveSite2.style.transition = 'letter-spacing 500ms';
+});
+
+btnResponsiveSite2.addEventListener('mouseleave', function(){
+    btnResponsiveSite2.style.letterSpacing = '6px';
+    btnResponsiveSite2.style.transition = 'letter-spacing 500ms';
+});
+
+
+
+
+// BTN GITHUB
+
+btnGithubSite2.addEventListener('mouseenter', function(){
+    bgGithubSite[1].style.backgroundColor = '#CE9797';
+    bgGithubSite[1].style.transition = 'background-color 300ms';
+});
+
+btnGithubSite2.addEventListener('mouseleave', function(){
+    bgGithubSite[1].style.backgroundColor = 'white';
+    bgGithubSite[1].style.transition = 'background-color 300ms';
+});
+
+// REDIRECTION
+
+// --- REDIRECTION UP
+
+arrowUp[1].addEventListener('click', function(){
+
+            setTimeout(() => {
+                siteArray[0].scrollIntoView({behavior: "smooth"});
+
+                titleLoopStudio.style.left = '50px';
+                titleLoopStudio.style.transition = 'left 500ms, opacity 1s';
+                titleLoopStudio.style.transitionDelay = '1000ms';
+                titleLoopStudio.style.opacity = '1';
+            
+                bgTitleLoopStudio.style.width = '250px';
+                bgTitleLoopStudio.style.transition = 'width 1000ms';
+                bgTitleLoopStudio.style.transitionDelay = '800ms';
+
+                btnGithubSite2.style.left = '-80px';
+                btnGithubSite2.style.transition = 'left 1s, opacity 10ms';
+                btnGithubSite2.style.opacity = '0';
+            
+                site1Page.style.backgroundColor = '#342670';
+                site1Page.style.transition = 'background-color 1s';
+            
+                imgSite1.style.height = '480px';
+                imgSite1.style.transition = 'height 1000ms, opacity 2s';
+                imgSite1.style.transitionDelay = '1000ms';
+                imgSite1.style.opacity = '1';
+            
+                imgSite1Responsive.style.height = '470px';
+                imgSite1Responsive.style.transition = 'height 1000ms, opacity 2s';
+                imgSite1Responsive.style.transitionDelay = '1000ms';
+                imgSite1Responsive.style.opacity = '1';
+            
+                arrowUp[0].style.opacity = '1';
+                arrowUp[0].style.transition = 'opacity 1s';
+                arrowUp[0].style.transitionDelay = '1000ms';
+
+                arrowDown[1].style.opacity = '1';
+                arrowDown[1].style.transition = 'opacity 1s';
+                arrowDown[1].style.transitionDelay = '1000ms';
+            
+                githubSite1.style.right = '50px';
+                githubSite1.style.transition = 'right 1s, opacity 10ms';
+                githubSite1.style.transitionDelay = '2000ms';
+                githubSite1.style.opacity = '1';
+                }, 1000);
+
+                divSite2.style.opacity = '0';
+                divSite2.style.transition = 'opacity 2000ms';
+                
+                imgSite2Picture.style.right = '-725px';
+
+                imgSite2Top.style.top = '-420px';
+
+                imgSite2Bottom.style.bottom = '-425px';
+
+                btnResponsiveSite2.style.opacity = '0';
+                btnResponsiveSite2.style.transition = 'opacity 1000ms';
+
+            
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

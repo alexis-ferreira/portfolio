@@ -546,7 +546,7 @@ arrowDown[1].addEventListener('click', function(){
 
             btnResponsiveSite2.style.opacity = '1';
             btnResponsiveSite2.style.transition = 'opacity 1000ms';
-            btnResponsiveSite2.style.transitionDelay = '3000ms';
+            btnResponsiveSite2.style.transitionDelay = '2000ms';
 
             btnGithubSite2.style.left = '50px';
             btnGithubSite2.style.transition = 'left 1s, opacity 10ms';

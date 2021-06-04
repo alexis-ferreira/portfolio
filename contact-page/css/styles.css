@@ -1,0 +1,69 @@
+/* ------- GENERAL -------- */
+
+body
+{
+    font-family: 'Montserrat', sans-serif;
+
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    opacity: 0;
+}
+
+#arrowLeft
+{
+    position: absolute;
+    left: 0px;
+}
+
+#arrowLeft>a>.fa-arrow-left
+{
+    color: white;
+
+    font-size: 30px;
+
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+h2
+{
+    color: white;
+
+    font-size: 60px;
+
+    text-align: center;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+p
+{
+    color: white;
+}
+
+#mailTitle, #phoneTitle
+{
+    font-size: 30px;
+
+    margin-bottom: 20px;
+}
+
+#phone, #mail
+{
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.border
+{
+    background-color: white;
+
+    height: 1px;
+    width: 100px;
+}

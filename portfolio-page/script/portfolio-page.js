@@ -238,11 +238,12 @@ arrowDown[1].addEventListener('click', function(){
 
             imgSite2Top.style.top = '0px';
 
-            imgSite2Bottom.style.bottom = '0px'
+            imgSite2Bottom.style.bottom = '0px';
 
-            btnResponsiveSite2.style.opacity = '1'
-            btnResponsiveSite2.style.transition = 'opacity 1000ms'
-        }, 2000);
+            btnResponsiveSite2.style.opacity = '1';
+            btnResponsiveSite2.style.transition = 'opacity 1000ms';
+            btnResponsiveSite2.style.transitionDelay = '3000ms';
+        }, 1500);
     }
 })
 

@@ -682,12 +682,30 @@ arrowUp[1].addEventListener('click', function(){
 
                 btnResponsiveSite2.style.opacity = '0';
                 btnResponsiveSite2.style.transition = 'opacity 1000ms';
-
-            
-})
+});
 
 
 
+// REDIRECTION DOWN
+
+arrowDown[2].addEventListener('click', function(){
+
+    setTimeout(() => {
+        siteArray[2].scrollIntoView({behavior: "smooth"});
+        }, 1000);
+
+        divSite2.style.opacity = '0';
+        divSite2.style.transition = 'opacity 2000ms';
+        
+        imgSite2Picture.style.right = '-725px';
+
+        imgSite2Top.style.top = '-420px';
+
+        imgSite2Bottom.style.bottom = '-425px';
+
+        btnResponsiveSite2.style.opacity = '0';
+        btnResponsiveSite2.style.transition = 'opacity 1000ms';
+});
 
 
 
@@ -702,4 +720,7 @@ arrowUp[1].addEventListener('click', function(){
 
 
 
+// ------------ ANIMATION SITE 3 ----------------
 
+let titleSite3 = document.getElementById('titleSite3');
+// console.log(titleSite3);

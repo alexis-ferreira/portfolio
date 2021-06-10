@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     divWindow.style.height = windowHeight + 'px';
 
-    if (screen.width < 450){
+    if (screen.width < 480){
         setTimeout(() => {
             
             titlePage.style.opacity = "1";
@@ -200,7 +200,7 @@ btnContact.addEventListener('mouseleave', function(){
 
 // RESPONSIVE
 
-if (windowWidth <= 450){
+if (windowWidth <= 480){
 
     let menuOpen = false;
     console.log(menuOpen);
@@ -300,7 +300,7 @@ function redirection(){
     divMenu.style.opacity = '0';
     divMenu.style.transition = "opacity 1000ms";
 
-    if (screen.width > 450 ){
+    if (screen.width > 480 ){
         alexisPicture.style.left = '-300px';
         alexisPicture.style.opacity = '0';
         alexisPicture.style.transition = 'left 1s, opacity 800ms';
@@ -346,7 +346,7 @@ function redirectionContact(){
     divMenu.style.opacity = '0';
     divMenu.style.transition = "opacity 1000ms";
 
-    if (screen.width > 450 ){
+    if (screen.width > 480 ){
         alexisPicture.style.left = '-300px';
         alexisPicture.style.opacity = '0';
         alexisPicture.style.transition = 'left 1s, opacity 800ms';

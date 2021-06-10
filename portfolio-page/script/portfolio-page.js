@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function(){
     description.style.opacity = '1';
     description.style.transitionDelay = '500ms';
     
-    if (widthScreen <= 450){
+    if (widthScreen <= 480){
     description.style.margin = '150px auto 0 auto';
     } else {
     description.style.marginRight = '-700px';
@@ -108,7 +108,7 @@ let bgGithubSite = document.getElementsByClassName('fa-github-square');
 // console.log(bgGithubSite);
 
 
-if (widthScreen <= 450){
+if (widthScreen <= 480){
     // document.body.style.overflow = 'auto'
 
     // for (let i = 0; i < siteArray.length; i++){
@@ -131,7 +131,7 @@ if (widthScreen <= 450){
         description.style.opacity = '1';
         description.style.transitionDelay = '500ms';
         
-        if (widthScreen <= 450){
+        if (widthScreen <= 480){
         description.style.margin = '150px auto 0 auto';
         } else{
         description.style.marginRight = '100px';
@@ -511,7 +511,7 @@ let btnGithubSite2 = document.getElementById('lienGithubSite2');
 
 arrowDown[1].addEventListener('click', function(){
 
-    if (screen.width > 450){
+    if (screen.width > 480){
 
         setTimeout(() => {
             divSite2.style.opacity = '1';
@@ -561,7 +561,7 @@ arrowDown[1].addEventListener('click', function(){
 
 arrowDown[1].addEventListener('click', function(){
 
-    if (screen.width > 450){
+    if (screen.width > 480){
 
         setTimeout(() => {
 
@@ -697,7 +697,7 @@ arrowUp[1].addEventListener('click', function(){
                 
                 imgSite2Picture.style.right = '-725px';
 
-                if (screen.width > 450){
+                if (screen.width > 480){
                     imgSite2Top.style.top = '-420px';
                     imgSite2Top.style.transition = 'top 1000ms';
                 } else {
@@ -727,7 +727,7 @@ arrowDown[2].addEventListener('click', function(){
         
         imgSite2Picture.style.right = '-725px';
 
-        if (screen.width > 450){
+        if (screen.width > 480){
             imgSite2Top.style.top = '-420px';
             imgSite2Top.style.transition = 'top 1000ms';
         } else {

@@ -750,7 +750,7 @@ main .container-portfolio .site-3>div:last-child>a>i
 
 /* -------- MEDIA QUERIES -------- */
 
-@media screen AND (max-width: 450px) {
+@media screen AND (max-width: 480px) {
 
     main>#header
     {

@@ -375,7 +375,7 @@ main .container-screen #container-menu>#portfolio>a>p, main .container-screen #c
 
 /* ------- MEDIA QUERIES ------- */
 
-@media screen AND (max-width: 450px) {
+@media screen AND (max-width: 480px) {
     
     #borderContact{
         position: absolute;
